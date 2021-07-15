@@ -4,7 +4,7 @@ import Item from "../Item/Item";
 export default function ItemList ({productos}) {
 
     return (
-        <div>
+        <div className="container">
           <h1></h1>
           <p></p>
     

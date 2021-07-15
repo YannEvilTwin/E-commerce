@@ -156,15 +156,8 @@ button:hover {
 
 .container {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  max-width: 1200px;
-  margin: 40px 0;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-content: center;
-  align-items: center;
+  flex-direction: row;  
+justify-content: space-between;
 }
 
 .container .card {

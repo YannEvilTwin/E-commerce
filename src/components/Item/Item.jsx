@@ -3,7 +3,7 @@ import React from "react";
 const Item = ({ item }) => {
     return  (
      <> 
-        <div className="container">
+        <div>
             <div className="card">
                 <div className="box">
                     <div className="content">
