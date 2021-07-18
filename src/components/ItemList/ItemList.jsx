@@ -4,22 +4,8 @@ import { misProductos } from "../../misProductos";
 
 console.log(misProductos);
 
-const ItemListContainer = () => {
+const ItemList = () => {
   const [productos, setProductos] = useState ([]);
-
-  const getItems = () => {
-
-    
-    return new Promise  ((resolve, reject) => {
-      setTimeout (() => {
-        resolve(misProductos);
-        reject("Error, no se pudo encontrar el producto");
-      }, 3000);
-    });
-  }; 
-  useEffect(() => {
-    getItems().then ((res) => setProductos(res));
-  }, []);
 
     return (
         <div className="container">
@@ -27,10 +13,12 @@ const ItemListContainer = () => {
           <p></p>
     
           {productos.map((item) => (
-            <Item key={item.id} product={item} />
+            <Item key={item.id} item={item} />
           ))}
         </div>
       );
+
+  
 }
 
-export default ItemListContainer;
+export default ItemList;

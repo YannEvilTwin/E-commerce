@@ -11,17 +11,17 @@ import ItemList from "./components/ItemList/ItemList";
 
 
 function App() {
-
-  const darBienvenida = () => alert("Bienvenido a nuestra tienda!!!")
-  
+ 
   return (
     <>
      <div className="App">
-      <Navbar nombreDeLaTienda="TIENDA GAMER" subtitulo="" darBienvenida={darBienvenida}/>
+      <Navbar nombreDeLaTienda="TIENDA GAMER"/>
      </div>
      <div className="centrado">
      {/*  <ItemCount  inicial = {1} stock = {10} /> */} {/* shift alt a */}
       <ItemListContainer/>
+    
+
     </div>
     
     </>

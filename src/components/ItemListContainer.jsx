@@ -52,17 +52,18 @@ const ItemListContainer = (props) => {
           setTimeout(() => resolve(itemsArray), 3500);
         });
     }
-    
+           
     useEffect (() => {
         obtenerItems () .then (respuesta => setProductos (respuesta))
     },[])
-
+  
     return (
      <div> 
         <h2 className="text-style">Bienvenidos a Tienda Gamer</h2>
         <ItemList productos = {productos}/>
      </div>
-    ); 
+  ); 
+ 
 
    //Aca ya no se puede poner nada
 };
