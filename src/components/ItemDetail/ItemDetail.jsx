@@ -21,14 +21,3 @@ const ItemDetail = ({ item }) => {
 };
 
 export default ItemDetail;
-
- /*  <div>
-      
-
-      <div className="content">
-        <img src={item.imagen} className=""alt={item.nombre}/>
-        <h3>{item.nombre}</h3>
-        <h3 className="card-text">{item.precio}</h3>
-        <button className="btn">Comprar</button>
-      </div>
-    </div> */
