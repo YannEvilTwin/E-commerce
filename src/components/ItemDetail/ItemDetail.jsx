@@ -3,7 +3,7 @@ import React from "react";
 const ItemDetail = ({ item }) => {
   return (
 
-  <div>
+   <div className="container">
       <div className="card">
           <div className="box">
             <div className="content">
@@ -11,7 +11,7 @@ const ItemDetail = ({ item }) => {
                <div className="card-title">
               <h3>{item.nombre}</h3>
               <h3> Precio: $ <span>{item.precio}</span></h3>
-              <button className="btn">Comprar</button>
+              <button id="btn">Comprar</button>
                </div>
             </div>
         </div>

@@ -151,6 +151,31 @@ button:hover {
  background: #499fd8;
 }
 
+/*Button Cards*/
+#btn:hover {
+  letter-spacing: 0.6em;
+  background-color: #8cacf0;
+}
+
+button {
+  height: 2.5em;
+  width: 100%;
+  padding: 0 auto;
+  border: none;
+  border-radius: 3px;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  transition: all 0.2s cubic-bezier(.4,0,.2,1);
+  font-family: 'Open Sans', sans-serif;
+  font-size: medium;
+  text-align: center;
+  -webkit-text-stroke: 0.5px rgb(13, 36, 99);
+  background: rgb(62,52,221);
+  background: linear-gradient(90deg, rgb(78, 70, 192) 0%, rgb(72, 167, 214) 35%, rgba(0,212,255,1) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 
 /*Cards*/
 
