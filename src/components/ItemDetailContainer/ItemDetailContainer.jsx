@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
-import ItemDetail from "./ItemDetail";
+import ItemDetail from "../ItemDetail/ItemDetail.jsx";
 import { useParams } from "react-router";
-import { misProductos } from "../misProductos";
+import { misProductos } from "../../misProductos";
 
 const ItemDetailContainer = () => {
   //id que me manda por parametros en url
@@ -25,7 +25,7 @@ const ItemDetailContainer = () => {
 
   return (
     <>
-      <ItemDetail producto={producto} />
+      <ItemDetail item={producto} />
     </>
   );
 };

@@ -1,5 +1,6 @@
 import React from "react";
 import Cart from "../Navbar/Cart";
+import { Link } from "react-router-dom";
 
 const Navbar = (props) => {
 
@@ -9,10 +10,10 @@ console.log(props);
         <nav>
             <h1>{props.nombreDeLaTienda}</h1>   
             <ul>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Nosotros</a></li>
-                <li><a href="#">Servicios</a></li>
-                <li><a href="#">Contacto</a></li>
+                <li>Inicio</li>
+                <li><Link to="/category/1">Combos</Link></li>
+                <li><Link to="/category/2">Perifericos</Link></li>
+                <li>Contacto</li>
                 <li><Cart/></li>
             </ul>
         </nav>

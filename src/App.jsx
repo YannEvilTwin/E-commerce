@@ -5,6 +5,7 @@ import ItemListContainer from "./components/ItemListContainer";
 import ItemCount from './components/ItemCount';
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import ItemList from "./components/ItemList/ItemList";
+import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer';
 
 
 //import "./archivo.css"
@@ -13,18 +14,26 @@ import ItemList from "./components/ItemList/ItemList";
 function App() {
  
   return (
-    <>
+
+    
+    <BrowserRouter>
      <div className="App">
       <Navbar nombreDeLaTienda="TIENDA GAMER"/>
      </div>
      <div className="centrado">
      {/*  <ItemCount  inicial = {1} stock = {10} /> */} {/* shift alt a */}
-      <ItemListContainer/>
-    
-
+      {/* <ItemListContainer/> */}
+      <ItemDetailContainer/>
     </div>
-    
-    </>
+
+    <Switch>
+      <Route exact path="/" component={ItemListContainer}></Route>
+      <Route path="/category/:categoryId" component={ItemListContainer}></Route>
+      <Route path=""></Route>
+    </Switch>
+    </BrowserRouter>
+   
+
   );
 }
 
