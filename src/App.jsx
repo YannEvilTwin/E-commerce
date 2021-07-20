@@ -23,13 +23,13 @@ function App() {
      <div className="centrado">
      {/*  <ItemCount  inicial = {1} stock = {10} /> */} {/* shift alt a */}
       {/* <ItemListContainer/> */}
-      <ItemDetailContainer/>
+      {/* <ItemDetailContainer/> */}
     </div>
 
     <Switch>
       <Route exact path="/" component={ItemListContainer}></Route>
       <Route path="/category/:categoryId" component={ItemListContainer}></Route>
-      <Route path=""></Route>
+      <Route path="/Item/:id" component={ItemDetailContainer}></Route>
     </Switch>
     </BrowserRouter>
    

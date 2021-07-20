@@ -13,7 +13,7 @@ const itemsArray = [
         stock: 10,
     },
     {
-        productoid: 2,
+        id: 2,
         nombre: "Gamer Bluecase BG-009 ATX",
         imagen: "./images/2.png",
         precio: 12237,
@@ -21,7 +21,7 @@ const itemsArray = [
         stock: 10,
     },
     {
-        productoid: 3,
+        id: 2,
         nombre: "Gamer Headset Redragon",
         imagen: "./images/3.png",
         precio: 6500,
@@ -29,7 +29,7 @@ const itemsArray = [
         stock: 10,
     },
     {
-        productoid: 4,
+        id: 2,
         nombre: "Gamer Mouse 3200dpi",
         imagen: "./images/4.png",
         precio: 1850,
@@ -54,7 +54,7 @@ const ItemListContainer = (props) => {
     }
            
     useEffect (() => {
-        obtenerItems () .then (respuesta => setProductos (respuesta))
+        obtenerItems() .then (respuesta => setProductos (respuesta))
     },[])
   
     return (

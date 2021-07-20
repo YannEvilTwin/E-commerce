@@ -10,10 +10,10 @@ console.log(props);
         <nav>
             <h1>{props.nombreDeLaTienda}</h1>   
             <ul>
-                <li>Inicio</li>
-                <li><Link to="/category/1">Combos</Link></li>
-                <li><Link to="/category/2">Perifericos</Link></li>
-                <li>Contacto</li>
+                <li><Link>Inicio</Link></li>
+                <li><Link to="category">Combos</Link></li>
+                <li><Link to="category">Perifericos</Link></li>
+                <li><Link>Contacto</Link></li>
                 <li><Cart/></li>
             </ul>
         </nav>
