@@ -1,3 +1,18 @@
+Proyecto E-Commerce en React JS
+Se realizó un e-commerce de productos de computación
+
+Herramientas utilizadas
+
+React Javascript
+Javascript
+HTML
+CSS
+
+Autor
+Yanina Andregnette
+
+-----------------------------------------------------------------------------------------------------
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
