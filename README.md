@@ -4,12 +4,17 @@ Se realizó un e-commerce de productos de computación
 
 Herramientas utilizadas
 
-React Javascript
-Javascript
-HTML
-CSS
+*React Javascript
+
+*Javascript
+
+*HTML
+
+*CSS
+
 
 Autor
+
 Yanina Andregnette
 
 -----------------------------------------------------------------------------------------------------
