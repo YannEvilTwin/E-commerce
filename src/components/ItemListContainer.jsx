@@ -44,7 +44,6 @@ const ItemListContainer = (props) => {
 
     const [productos, setProductos] = useState ([])
     
-
   //Aca van estados y funciones
 
     const obtenerItems = () => {
