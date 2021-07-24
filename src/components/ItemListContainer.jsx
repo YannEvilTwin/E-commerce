@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
+import Item from "./Item/Item";
 import ItemList from "./ItemList/ItemList";
+import { useParams } from 'react-router-dom';
 
 
  //Array de items
@@ -43,19 +45,31 @@ const ItemListContainer = (props) => {
     console.log(props);
 
     const [productos, setProductos] = useState ([])
+
+    const {id} = useParams();
+    console.log(id, 'este es id de itemListContainer');
     
   //Aca van estados y funciones
 
     const obtenerItems = () => {
         return new Promise((resolve, reject) => {
-          setTimeout(() => resolve(itemsArray), 3500);
+          setTimeout(() => {
+            if(!!id){
+                const filtrado = itemsArray.filter((item) => item.category == id);
+                resolve(filtrado);
+            } else {
+                  resolve(itemsArray)
+            }
+          }, 3500);
         });
+
     }
            
     useEffect (() => {
         obtenerItems() .then (respuesta => setProductos (respuesta))
     },[])
-  
+
+
     return (
      <div> 
         <h2 className="text-style">Bienvenidos a Tienda Gamer</h2>
