@@ -21,7 +21,7 @@ const ItemCount = ({ inicial, stock }) => {
            
           </button>
             <p>{contador}</p>
-          <button className ="chevron-circle-rigth btn-contador" onClick = {handleClick}>
+          <button className="chevron-circle-rigth btn-contador" onClick = {handleClick}>
             
           </button>
        </div>

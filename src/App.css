@@ -144,9 +144,10 @@ button:hover {
 }
 
 /*Button Cards*/
+
 .btn:hover {
-  letter-spacing: 0.6em;
-  background-color: #8cacf0;
+  letter-spacing: 0.4em;
+  background-color: #a7acf5;
 }
 
 button {
