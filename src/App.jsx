@@ -21,7 +21,7 @@ function App() {
       <Navbar nombreDeLaTienda="TIENDA GAMER"/>
      </div>
      <div className="centrado">
-     {/*  <ItemCount  inicial = {1} stock = {10} /> */} {/* shift alt a */}
+    {/*  {<ItemCount  inicial = {1} stock = {10} />} */} {/* shift alt a */}
       {/* <ItemListContainer/> */}
       {/* <ItemDetailContainer/> */}
     </div>

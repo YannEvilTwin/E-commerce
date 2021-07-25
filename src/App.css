@@ -101,7 +101,7 @@ h1 {
   display: flex;
   justify-content: center;
   text-transform: uppercase;
-  margin-top: 10px;
+  margin-top: 25px;
 }
 
 /*Botones*/
@@ -112,13 +112,6 @@ h1 {
   justify-content: center;
   margin: 10px;
 
-}
-
-.ItemCount-Button {
-  width: 25px;
-  height: 25px;
-  margin: 10px;
-  
 }
 
 p {
@@ -140,14 +133,14 @@ p {
   line-height: 1;
   border: 0;
   outline: 0;
-  border-radius: 3px;
+  border-radius: 5px;
   cursor: pointer;
   text-align: center;
   transition: background 0.3s ease-in;
 }
 
 button:hover {
- background: #499fd8;
+ background: #a7acf5;
 }
 
 /*Button Cards*/
@@ -155,8 +148,6 @@ button:hover {
   letter-spacing: 0.6em;
   background-color: #8cacf0;
 }
-
-
 
 button {
   height: 2.5em;
@@ -184,7 +175,9 @@ button {
 .container {
   display: flex;
   flex-direction: row;  
-justify-content: space-between;
+  justify-content: space-between;
+  margin-top: 25px;
+
 }
 
 .container .card {
