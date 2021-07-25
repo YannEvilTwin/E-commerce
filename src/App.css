@@ -131,9 +131,9 @@ p {
 
 }
 
-.button {
+.btn-contador{
   margin-right: 15px;
-  padding: 30px 30px;
+  margin-left: 15px;
   color: #fff;
   background: transparent;
   font-size: .9em;
@@ -143,7 +143,6 @@ p {
   border-radius: 3px;
   cursor: pointer;
   text-align: center;
-  box-shadow: 0 5px 5px -5px #333;
   transition: background 0.3s ease-in;
 }
 
@@ -152,10 +151,12 @@ button:hover {
 }
 
 /*Button Cards*/
-#btn:hover {
+.btn:hover {
   letter-spacing: 0.6em;
   background-color: #8cacf0;
 }
+
+
 
 button {
   height: 2.5em;
@@ -177,6 +178,7 @@ button {
   -webkit-text-fill-color: transparent;
 }
 
+
 /*Cards*/
 
 .container {
@@ -188,7 +190,7 @@ justify-content: space-between;
 .container .card {
   position: relative;
   min-width: 320px;
-  height: 440px;
+  height: 500px;
   box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.2),
     inset -5px -5px 15px rgba(147, 190, 231, 0.1),
     5px 5px 15px rgba(0, 0, 0, 0.3), -5px -5px 15px rgba(255, 255, 255, 0.1);

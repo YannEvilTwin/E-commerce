@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 
-const ItemCount = ({inicial, stock}) => {
+const ItemCount = ({ inicial, stock }) => {
    const[contador, setContador] = useState(inicial)
 
    const handleClick = () => {
@@ -17,11 +17,11 @@ const ItemCount = ({inicial, stock}) => {
    
     return (
        <div className="centrado">
-          <button className="button fas fa-chevron-circle-left" onClick = {handleClickResta}>
+          <button className="chevron-circle-left btn-contador" onClick = {handleClickResta}>
            
           </button>
             <p>{contador}</p>
-          <button className = "button fas fa-chevron-circle-right" onClick = {handleClick}>
+          <button className ="chevron-circle-rigth btn-contador" onClick = {handleClick}>
             
           </button>
        </div>
