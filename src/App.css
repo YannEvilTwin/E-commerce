@@ -115,19 +115,23 @@ h1 {
 }
 
 p {
-  color: #ffffff;
-  text-shadow: 2px 2px 2px rgba(22, 22, 22, 0.945);
-  font-weight: bold;
-  margin-left: -15px;
-  font-size: 2em;
-  line-height: 1;
+  text-shadow: 1px 1px 1px rgba(22, 22, 22, 0.952);
+  margin-left: -5px;
+  background: rgb(62,52,221);
+  background: linear-gradient(90deg, rgb(78, 70, 192) 0%, rgb(72, 167, 214) 35%, rgba(0,212,255,1) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 2rem;
+  font-family: 'Open Sans', sans-serif;
 
 }
 
 .btn-contador{
   margin-right: 15px;
   margin-left: 15px;
-  color: #fff;
   background: transparent;
   font-size: .9em;
   line-height: 1;

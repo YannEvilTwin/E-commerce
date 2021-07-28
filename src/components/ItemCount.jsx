@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
 
-const ItemCount = ({ inicial, stock }) => {
-   const[contador, setContador] = useState(inicial)
 
+const ItemCount = ({ inicial, stock, contador, setContador }) => {
+   
    const handleClick = () => {
       if(contador < stock){
          setContador(contador + 1)
@@ -18,11 +18,11 @@ const ItemCount = ({ inicial, stock }) => {
     return (
        <div className="centrado">
           <button className="chevron-circle-left btn-contador" onClick = {handleClickResta}>
-           
+           -
           </button>
             <p>{contador}</p>
           <button className="chevron-circle-rigth btn-contador" onClick = {handleClick}>
-            
+           +
           </button>
        </div>
     )
