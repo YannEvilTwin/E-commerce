@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 
 
-const ItemCount = ({ inicial, stock, contador, setContador }) => {
+const ItemCount = ({ initial, stock, contador, setContador }) => {
    
    const handleClick = () => {
       if(contador < stock){
@@ -10,7 +10,7 @@ const ItemCount = ({ inicial, stock, contador, setContador }) => {
    }
 
    const handleClickResta = () => {
-      if(contador > inicial){
+      if(contador > initial){
          setContador(contador - 1)
       } 
    }
