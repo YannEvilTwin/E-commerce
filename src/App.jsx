@@ -6,6 +6,8 @@ import ItemCount from './components/ItemCount';
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import ItemList from "./components/ItemList/ItemList";
 import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer';
+import { CartProvider } from './components/CartContext';
+import Cart from './components/Navbar/Cart';
 
 
 //import "./archivo.css"
@@ -15,7 +17,7 @@ function App() {
  
   return (
 
-    
+  <CartProvider>
     <BrowserRouter>
      <div className="App">
       <Navbar nombreDeLaTienda="TIENDA GAMER"/>
@@ -30,8 +32,12 @@ function App() {
       <Route exact path="/" component={ItemListContainer}></Route>
       <Route path="/category/:id" component={ItemListContainer}></Route>
       <Route path="/Item/:id" component={ItemDetailContainer}></Route>
+      <Route exact path="/cart" component={Cart}>
+        <Cart></Cart>
+      </Route>
     </Switch>
     </BrowserRouter>
+  </CartProvider>
    
 
   );
