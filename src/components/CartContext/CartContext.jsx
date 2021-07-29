@@ -6,7 +6,7 @@ export const CartProvider = ({ children }) => {
 
     const usuario = useState(null);
 
-    const {cart, setCart} = useState ([]);
+    const [cart, setCart] = useState ([]);
 
     const agregarAlCarrito = (item) => {
         setCart([...cart, item])

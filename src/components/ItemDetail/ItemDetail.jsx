@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 import { Link } from "react-router-dom";
 import { CartContext } from "../CartContext/CartContext";
 import ItemCount from "../ItemCount";
@@ -34,7 +34,7 @@ const ItemDetail = ({ item }) => {
                  stock={item.stock}
                  />  
                  <button onClick={handleAgregar} className="btn">Agregar al carrito</button>
-                 <p>Agregar al carrito {contador} unidades</p>
+                 <h3>Agregar {contador} unidades</h3>
                 </>
               ) : (
                 <>

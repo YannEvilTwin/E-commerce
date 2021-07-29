@@ -5,10 +5,9 @@ import Item from "../Item/Item";
 const Cart = () => {
 
     const { cart } = useContext(CartContext);
-    const { vaciarCarrizo } = useContext;
-    (CartContext)
+    const { vaciarCarrito } = useContext (CartContext);
     const handleVaciarCarrito = () => {
-        vaciarCarrizo(
+        vaciarCarrito(
 
         );
     };
@@ -21,7 +20,7 @@ const Cart = () => {
         <div>
             Estas comprando: 
             {cart.map(item => 
-            <Item key={item.id} {...item}></Item>)}
+            <Item key={item.id} item={item}></Item>)}
 
         </div>
 

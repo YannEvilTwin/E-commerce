@@ -1,6 +1,7 @@
 import React from "react";
 import Cart from "../Navbar/Cart";
 import { Link } from "react-router-dom";
+import CartWidget from "../CartWidget";
 
 const Navbar = (props) => {
 
@@ -14,7 +15,8 @@ console.log(props);
                 <li><Link to="/category/1">Combos</Link></li>
                 <li><Link to="/category/2">Perifericos</Link></li>
                 <li><Link>Contacto</Link></li>
-                <li><Cart/></li>
+                <li><CartWidget/></li>
+              
             </ul>
         </nav>
     );
@@ -27,3 +29,4 @@ export default Navbar; //siempre exportar con el nombre de la variable
 //<h2>{props.subtitulo}</h2>
 
 //<i class="fab fa-opencart"></i>
+//  <li><Cart/></li>
