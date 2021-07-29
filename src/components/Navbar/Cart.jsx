@@ -16,15 +16,15 @@ const Cart = () => {
     return (
         
         <>
-        <i class="fab fa-opencart"></i>
         <div>
-            Estas comprando: 
-            {cart.map(item => 
-            <Item key={item.id} item={item}></Item>)}
+            <h3>Estas comprando:</h3>
+            <div className="container cardCarrito">
+                 {cart.map(item => 
+                 <Item key={item.id} item={item}></Item>)}          
+            </div>
+            <button onClick={handleVaciarCarrito} className="botonCarrito">Vaciar Carrito</button>
 
-        </div>
-
-        <button onClick={handleVaciarCarrito}>Vaciar Carrito</button>
+        </div>   
         </>
 
     )

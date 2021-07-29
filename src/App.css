@@ -27,6 +27,7 @@ nav ul {
 
 nav ul li {
   display: inline-block;
+
 }
 
 nav ul li a {
@@ -61,11 +62,12 @@ nav ul li:hover {
   color: rgba(0, 35, 122, 0.7);
 }
 
+
 /*Fin Navbar*/
 
 h1 {
   display: inline-block;
-  margin: 1px;
+  margin: 17px;
   padding: 3px;
   -webkit-text-stroke: 0.5px rgb(13, 36, 99);
   
@@ -144,14 +146,14 @@ p {
 }
 
 button:hover {
- background: #a7acf5;
+ background: transparent;
 }
 
 /*Button Cards*/
 
 .btn:hover {
-  letter-spacing: 0.4em;
-  background-color: #a7acf5;
+  letter-spacing: 0.3em;
+  background-color: transparent;
 }
 
 button {
@@ -174,6 +176,26 @@ button {
   -webkit-text-fill-color: transparent;
 }
 
+.botonCarrito {
+  margin-right: 15px;
+  background: transparent;
+  font-size: 1.45em;
+  outline: 0;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  transition: background 0.3s ease-in;
+  transition: all 0.2s cubic-bezier(.4,0,.2,1);
+  font-family: 'Open Sans', sans-serif;
+  font-size: medium;
+  text-align: center;
+}
+
+.botonCarrito:hover {
+  letter-spacing: 0.35em;
+  background-color: transparent;
+}
+
 
 /*Cards*/
 
@@ -188,7 +210,7 @@ button {
 .container .card {
   position: relative;
   min-width: 320px;
-  height: 500px;
+  height: 550px;
   box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.2),
     inset -5px -5px 15px rgba(147, 190, 231, 0.1),
     5px 5px 15px rgba(0, 0, 0, 0.3), -5px -5px 15px rgba(255, 255, 255, 0.1);
@@ -232,4 +254,9 @@ h3 {
   -webkit-text-fill-color: transparent;
   margin-bottom: 10px;
   margin-top: 10px;
+}
+
+.cardCarrito {
+  justify-content: center;
+  align-items: center;
 }

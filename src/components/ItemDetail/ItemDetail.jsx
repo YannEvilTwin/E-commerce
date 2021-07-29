@@ -34,14 +34,15 @@ const ItemDetail = ({ item }) => {
                  stock={item.stock}
                  />  
                  <button onClick={handleAgregar} className="btn">Agregar al carrito</button>
-                 <h3>Agregar {contador} unidades</h3>
+                 <h3> Productos agregados {contador}</h3>
                 </>
               ) : (
                 <>
                 <Link to="/cart" onClick={handleState}>
                   <button onClick={handleState}>Finalizar Compra</button>
-                </Link>
+                
                 <button onClick={handleState}>Modificar Compra</button>
+                </Link>
                 </>
               )}             
                </div>
