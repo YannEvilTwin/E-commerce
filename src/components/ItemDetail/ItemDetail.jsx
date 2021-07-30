@@ -6,14 +6,10 @@ import ItemCount from "../ItemCount";
 const ItemDetail = ({ item }) => {
 
   const [contador, setContador] = useState(1);
-
   const [finished, setFinished] = useState(false);
-
   const handleState = () => setFinished(!finished);
-
   const {agregarAlCarrito} = useContext(CartContext);
-  const handleAgregar = () => agregarAlCarrito(item);
-
+  const handleAgregar = () => agregarAlCarrito({...item, cantidad: contador});
 
   return (
 
@@ -22,7 +18,7 @@ const ItemDetail = ({ item }) => {
           <div className="box">
             <div className="content">
               <img src={item.imagen} alt={item.nombre}/>
-               <div className="card-title">
+               <div>
               <h3>{item.nombre}</h3>
               <h3> Precio: $ <span>{item.precio}</span></h3>
               {!finished ? (

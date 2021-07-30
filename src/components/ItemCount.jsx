@@ -17,11 +17,11 @@ const ItemCount = ({ initial, stock, contador, setContador }) => {
    
     return (
        <div className="centrado">
-          <button className="chevron-circle-left btn-contador" onClick = {handleClickResta}>
+          <button className="btn-contador" onClick = {handleClickResta}>
            -
           </button>
             <p>{contador}</p>
-          <button className="chevron-circle-rigth btn-contador" onClick = {handleClick}>
+          <button className="btn-contador" onClick = {handleClick}>
            +
           </button>
        </div>

@@ -1,4 +1,3 @@
-
 import './App.css';
 import Navbar from "./components/Navbar/Navbar";
 import ItemListContainer from "./components/ItemListContainer";
@@ -9,9 +8,7 @@ import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailCont
 import { CartProvider } from './components/CartContext/CartContext';
 import Cart from './components/Navbar/Cart';
 
-
 //import "./archivo.css"
-
 
 function App() {
  
@@ -38,12 +35,8 @@ function App() {
     </Switch>
     </BrowserRouter>
   </CartProvider>
-   
-
   );
 }
-
-
 
 export default App;
 

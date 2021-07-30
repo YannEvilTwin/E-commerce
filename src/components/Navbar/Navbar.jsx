@@ -8,7 +8,7 @@ const Navbar = (props) => {
 console.log(props);
 
     return (
-        <nav>
+        <nav className= "">
             <h1>{props.nombreDeLaTienda}</h1>   
             <ul>
                 <li><Link to="">Inicio</Link></li>

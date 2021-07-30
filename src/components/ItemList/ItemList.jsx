@@ -3,8 +3,6 @@ import Item from "../Item/Item";
 import { misProductos } from "../../misProductos";
 
 console.log(misProductos);
-
-
   
   const ItemList = ({productos}) => {
     return (
@@ -15,7 +13,6 @@ console.log(misProductos);
         </div>
       );
   }
-
 
 
 export default ItemList;
