@@ -59,12 +59,13 @@ export const CartProvider = ({ children }) => {
     vaciarCarrito,
     addItem,
     deleteItem,
+    agregarAlCarrito,
     };
 
     //retorno el context provider y en value le asigno los valores de mi estado global
    //que quiero dale a mi app
     return (
-        <CartContext.Provider value = {{values}}>
+        <CartContext.Provider value = {values}>
             {usuario}
             {children}
         </CartContext.Provider>

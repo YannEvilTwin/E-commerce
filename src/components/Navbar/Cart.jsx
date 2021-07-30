@@ -22,6 +22,7 @@ const Cart = () => {
             <div className="container cardCarrito">
                  {cart.map(item => 
                  <Item key={item.id} item={item}></Item>)}
+                 
             </div>
             
             <button onClick={handleVaciarCarrito} className="botonCarrito">Vaciar Carrito</button>
