@@ -5,11 +5,27 @@ import ItemCount from "../ItemCount";
 
 const ItemDetail = ({ item }) => {
 
-  const [contador, setContador] = useState(1);
+  //destructuro mi objeto y traigo lo que necesite de mi estado global
+  //utilizo useContext y entre parentesis le paso el contexto del cual quiero traer mi data
+  const {cart, addItem, isInCart, editCart, deleteItem } = useContext(CartContext);
+  
   const [finished, setFinished] = useState(false);
   const handleState = () => setFinished(!finished);
-  const {agregarAlCarrito} = useContext(CartContext);
+  
   const handleAgregar = () => agregarAlCarrito({...item, cantidad: contador});
+
+  //Estado del contador
+  const [contador, setContador] = useState(1);
+  console.log(cart);
+
+  const agregarAlCarrito = () => {
+    if (isInCart(item.id)) {  //item.id?
+      editCart({ ...item, cantidad: contador });
+    } else {
+      addItem({ ...item, cantidad: contador });
+    }
+
+  };
 
   return (
 
