@@ -13,6 +13,7 @@ const itemsArray = [
         precio: 8699,
         category: 1,
         stock: 10,
+        description: "Un Kit pensado para cubrirlo todo, con los periféricos más famosos de Redragon. Ideal para tu ecosistema Gaming."
     },
     {
         id: 2,
@@ -21,6 +22,7 @@ const itemsArray = [
         precio: 12237,
         category: 2,
         stock: 10,
+        description: "Diseño simple y compacto, con todo lo que necesitas para tu setup."
     },
     {
         id: 3,
@@ -29,6 +31,7 @@ const itemsArray = [
         precio: 6500,
         category: 2,
         stock: 10,
+        description: "Con los Redragon no te perdés ningún detalle y escuchás el audio tal y como fue diseñado por los creadores."
     },
     {
         id: 4,
@@ -37,6 +40,7 @@ const itemsArray = [
         precio: 1850,
         category: 2,
         stock: 10,
+        description: "Carcasa ergonómica. Posee un diseño estructural relajado para evitar la fatiga de la mano del mouse."
     },
    
 ]

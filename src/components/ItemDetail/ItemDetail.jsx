@@ -37,7 +37,7 @@ const ItemDetail = ({ item }) => {
                 <Link to="/cart" onClick={handleState}>
                   <button onClick={handleState}>Finalizar Compra</button>
                 
-                <button onClick={handleState}>Modificar Compra</button>
+                  <button onClick={handleState}>Modificar Compra</button>
                 </Link>
                 </>
               )}             

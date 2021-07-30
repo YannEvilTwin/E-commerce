@@ -9,9 +9,11 @@ const Item = ({ item }) => {
                 <div className="box">
                     <div className="content">
                     <img src={item.imagen} alt={item.nombre}/>
-                      <div>
-                    <h3>{item.nombre}</h3>
-                    <h3> Precio: $ <span>{item.precio}</span></h3>
+                      <div className="descripcion">
+                        <h3>{item.nombre}</h3>
+                        <h3> Precio: $ <span>{item.precio}</span></h3>
+                        <br></br>
+                        <h4> {item.description}</h4>
                       </div>
                     </div>
                 </div>
