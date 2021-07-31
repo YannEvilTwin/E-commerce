@@ -1,4 +1,4 @@
-import './App.css';
+
 import Navbar from "./components/Navbar/Navbar";
 import ItemListContainer from "./components/ItemListContainer";
 import ItemCount from './components/ItemCount';
@@ -7,11 +7,14 @@ import ItemList from "./components/ItemList/ItemList";
 import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer';
 import { CartProvider } from './components/CartContext/CartContext';
 import Cart from './components/Navbar/Cart';
+import './App.css';
 
 //import "./archivo.css"
 
+
 function App() {
- 
+
+
   return (
 
   <CartProvider>

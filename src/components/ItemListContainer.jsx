@@ -22,7 +22,7 @@ const itemsArray = [
         precio: 12237,
         category: 2,
         stock: 10,
-        description: "Diseño simple y compacto, con todo lo que necesitas para tu setup."
+        description: "El gabinete Gamer Bluecase posee un diseño simple y compacto, con todo lo que necesitas para tu setup."
     },
     {
         id: 3,
