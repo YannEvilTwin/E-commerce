@@ -28,6 +28,7 @@ const ItemDetail = ({ item }) => {
 
   };
 
+
   return (
 
    <div className="container">

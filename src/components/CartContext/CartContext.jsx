@@ -1,4 +1,5 @@
 import React, { createContext, useState } from 'react';
+import { misProductos } from '../../misProductos';
 
 //se crea el Contexto para ser usado en cualquier componente
 //se genera un export const porque lo tengo que importar cada vez que lo quiera usar
@@ -47,6 +48,8 @@ export const CartProvider = ({ children }) => {
     const newCart = cart.filter((item) => item.id !== id);
     setCart(newCart);
     };
+
+
 
 
     //creo un objeto para ir agregando todo lo que quiera tener en mi estado global
