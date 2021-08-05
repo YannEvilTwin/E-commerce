@@ -1,13 +1,13 @@
-import React, { useState, useEffect } from "react";
+import React, { useContext, useState, useEffect } from "react";
 import ItemDetail from "../ItemDetail/ItemDetail.jsx";
 import { useParams } from "react-router";
-import { misProductos } from "../../misProductos";
+import { ShopContext } from "../ShopContext/ShopContext.jsx";
 
 const ItemDetailContainer = () => {
   //id que me manda por parametros en url
   const { id } = useParams();
   //guardo todos los productos
-  const [productos, setProductos] = useState(misProductos);
+  const {productos} = useContext(ShopContext);
   //guardo el producto que busque con find
   const [producto, setProducto] = useState({});
 
