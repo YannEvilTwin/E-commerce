@@ -49,9 +49,6 @@ export const CartProvider = ({ children }) => {
     setCart(newCart);
     };
 
-
-
-
     //creo un objeto para ir agregando todo lo que quiera tener en mi estado global
    //puedo pasar array, objetos o funciones
     const values = {

@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
+
 const CartWidget = () => {
 
   
@@ -9,6 +10,7 @@ const CartWidget = () => {
         <>
         <Link to="/cart">
         <i class="fab fa-opencart"></i>
+        <span></span>
         </Link>
         </>
 

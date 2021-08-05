@@ -1,4 +1,3 @@
-
 import Navbar from "./components/Navbar/Navbar";
 import ItemListContainer from "./components/ItemListContainer";
 import ItemCount from './components/ItemCount';
@@ -7,6 +6,7 @@ import ItemList from "./components/ItemList/ItemList";
 import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer';
 import { CartProvider } from './components/CartContext/CartContext';
 import Cart from './components/Navbar/Cart';
+import { ShopContextComponent } from "./components/ShopContext/ShopContext";
 import './App.css';
 
 //import "./archivo.css"
@@ -17,27 +17,29 @@ function App() {
 
   return (
 
-  <CartProvider>
-    <BrowserRouter>
-     <div className="App">
-      <Navbar nombreDeLaTienda="TIENDA GAMER"/>
-     </div>
-     <div className="centrado">
-    {/*  {<ItemCount  inicial = {1} stock = {10} />} */} {/* shift alt a */}
-      {/* <ItemListContainer/> */}
-      {/* <ItemDetailContainer/> */}
-    </div>
+    <ShopContextComponent>
+      <CartProvider>
+        <BrowserRouter>
+        <div className="App">
+          <Navbar nombreDeLaTienda="TIENDA GAMER"/>
+        </div>
+        <div className="centrado">
+        {/*  {<ItemCount  inicial = {1} stock = {10} />} */} {/* shift alt a */}
+          {/* <ItemListContainer/> */}
+          {/* <ItemDetailContainer/> */}
+        </div>
 
-    <Switch>
-      <Route exact path="/" component={ItemListContainer}></Route>
-      <Route path="/category/:id" component={ItemListContainer}></Route>
-      <Route path="/Item/:id" component={ItemDetailContainer}></Route>
-      <Route exact path="/cart" component={Cart}>
-        <Cart></Cart>
-      </Route>
-    </Switch>
-    </BrowserRouter>
-  </CartProvider>
+        <Switch>
+          <Route exact path="/" component={ItemListContainer}></Route>
+          <Route path="/category/:id" component={ItemListContainer}></Route>
+          <Route path="/Item/:id" component={ItemDetailContainer}></Route>
+          <Route exact path="/cart" component={Cart}>
+            <Cart></Cart>
+          </Route>
+        </Switch>
+        </BrowserRouter>
+      </CartProvider>
+    </ShopContextComponent>
   );
 }
 
