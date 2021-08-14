@@ -18,8 +18,6 @@ const firebaseConfig = firebase.initializeApp({
     return firebaseConfig
 }
 
-
-
 // Funcionalidades de Firebase
 // Conectar el sitio a la base de datos
     export const getFirestore = () => {

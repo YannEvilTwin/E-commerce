@@ -19,10 +19,12 @@ nav {
   padding: 0 auto;
 }
 
+
 nav ul {
   text-align: right;
   background: linear-gradient(90deg, rgba(255, 255, 255, 0.274) 0%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 100%);
   box-shadow: 0 0 25px rgba(0, 0, 0, 0.1), inset 0 0 1px rgba(255, 255, 255, 0.6); 
+  padding: 18px;
 }
 
 nav ul li {
@@ -199,7 +201,6 @@ button {
 .btnModCom {
   display: flex; 
   display:inline-block;
-
   justify-content: center;
 
 }
@@ -212,7 +213,6 @@ button {
   flex-direction: row;  
   justify-content: space-between;
   margin-top: 25px;
-
 }
 
 .container .card {
@@ -262,6 +262,7 @@ h3 {
   margin-bottom: 10px;
   margin-top: 10px;
   text-transform: uppercase;
+ 
 }
 
 h4 {
@@ -290,3 +291,20 @@ h4 {
   justify-content: center;
   align-items: center;
 }
+
+/*Cart*/
+
+.carrito {
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+  -webkit-text-stroke: 0.5px rgb(13, 36, 99);
+  background: linear-gradient(90deg, rgb(78, 70, 192) 0%, rgb(72, 167, 214) 35%, rgba(0,212,255,1) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  text-transform: uppercase;
+  
+}
+
