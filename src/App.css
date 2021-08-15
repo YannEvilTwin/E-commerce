@@ -211,8 +211,9 @@ button {
 .container {
   display: flex;
   flex-direction: row;  
-  justify-content: space-between;
+  justify-content: center;
   margin-top: 25px;
+  flex-wrap: wrap;
 }
 
 .container .card {
