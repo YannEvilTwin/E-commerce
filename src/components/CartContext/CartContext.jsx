@@ -13,9 +13,9 @@ export const CartProvider = ({ children }) => {
 
     //funciones que modificaran el cart
    //Agrega al carrito
-    const addItem = (item) => {
+     const addItem = (item) => {
         setCart([...cart, item])
-    };
+    }; 
 
     const agregarAlCarrito = (item) => {
         setCart([...cart, item])
@@ -55,30 +55,29 @@ export const CartProvider = ({ children }) => {
         return setCartLength(cartAux)
     } , [cart]);
 
-    const createOrder = (email, phone, name) => {
-     const order = {buyer: { email, phone, name }, item: cart, total: total}  
-     const db = getFirestore();
-     db.collection('orders').add(order);
-    }
 
-    //creo un objeto para ir agregando todo lo que quiera tener en mi estado global
-   //puedo pasar array, objetos o funciones
+    //creo un objeto para ir agregando todo lo que quiera tener en mi estado global (array, objetos o funciones)
     const values = {
     cart,
     setCart,
     isInCart,
     editCart,
     vaciarCarrito,
-    addItem,
     deleteItem,
     agregarAlCarrito,
     cartLength,
-    createOrder,
     total,
+    addItem,
     };
 
-    //retorno el context provider y en value le asigno los valores de mi estado global
-   //que quiero dale a mi app
+    //retorno el context provider y en value le asigno los valores de mi estado global que quiero dale a mi app
+
+   useEffect(() => {
+    setTotal(cart.reduce((acc, {cantidad, precio}) => {
+        return acc = acc + (precio * cantidad)
+     }, 0))
+    }, [cart])
+
     return (
         <CartContext.Provider value = {values}>
             {usuario}
@@ -88,3 +87,4 @@ export const CartProvider = ({ children }) => {
     };  
     
 export default CartContext;
+

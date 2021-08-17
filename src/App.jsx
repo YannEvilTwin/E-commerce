@@ -1,12 +1,11 @@
 import Navbar from "./components/Navbar/Navbar";
 import ItemListContainer from "./components/ItemListContainer";
-import ItemCount from './components/ItemCount';
 import { BrowserRouter, Switch, Route } from "react-router-dom";
-import ItemList from "./components/ItemList/ItemList";
 import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer';
 import { CartProvider } from './components/CartContext/CartContext';
 import Cart from './components/Navbar/Cart';
 import { ShopContextComponent } from "./components/ShopContext/ShopContext";
+import CartForm from './components/CartForm/CartForm';
 import './App.css';
 
 //import "./archivo.css"
@@ -30,9 +29,12 @@ function App() {
           <Route exact path="/" component={ItemListContainer}></Route>
           <Route path="/category/:category" component={ItemListContainer}></Route>
           <Route path="/Item/:id" component={ItemDetailContainer}></Route>
-          <Route exact path="/cart" component={Cart}>
-            <Cart></Cart>
+          <Route exact path="/cart" component={Cart}> 
+          <Cart></Cart>
           </Route>
+          <Route exact path="/checkout" component={CartForm}></Route>
+        
+         
         </Switch>
         </BrowserRouter>
       </CartProvider>

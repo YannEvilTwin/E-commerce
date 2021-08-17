@@ -1,5 +1,4 @@
-import React, { useContext, useState, useEffect } from "react";
-import Item from "./Item/Item";
+import React, { useContext } from "react";
 import ItemList from "./ItemList/ItemList";
 import { useParams } from 'react-router-dom';
 import { ShopContext } from "./ShopContext/ShopContext";

@@ -1,5 +1,4 @@
 import React from "react";
-import Cart from "../Navbar/Cart";
 import { Link } from "react-router-dom";
 import CartWidget from "../CartWidget";
 
@@ -21,10 +20,3 @@ const Navbar = (props) => {
 };
 
 export default Navbar; //siempre exportar con el nombre de la variable
-
-//<button onClick={props.darBienvenida}>Saludame</button>
-
-//<h2>{props.subtitulo}</h2>
-
-//<i class="fab fa-opencart"></i>
-//  <li><Cart/></li>
