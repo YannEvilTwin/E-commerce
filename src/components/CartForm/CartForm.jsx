@@ -17,10 +17,14 @@ const CartForm = () => {
             ...user,
             [e.target.name]: e.target.value
         })
-    }
+    };
 
     const handleSubmit = (e) => {
         e.preventDefault();
+
+        const ventas = database.collection("ventas");
+        const productos = database.collection("productos");
+
         const compra = {
             buyer: user,
             items: cart,
@@ -34,16 +38,13 @@ const CartForm = () => {
       .then((refDoc) => {
         cart.map((item) => {
           const decrement = item.cantidad;
-          productos.doc(item.id).update({
+          productos.doc(item.id.toString()).update({
             stock: firebase.firestore.FieldValue.increment(-decrement)
           });
         });
         console.log(refDoc.id);
       });
     };
-
-    const ventas = database.collection("ventas");
-    const productos = database.collection("productos");
 
   return (
    <div> 
