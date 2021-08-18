@@ -2,6 +2,7 @@ import React, { useContext, useState } from "react";
 import { CartContext } from "../CartContext/CartContext";
 import { database } from "../Firebase/firebase";
 import firebase from "firebase/app";
+import "./CartForm.css";
 
 const CartForm = () => {
     
@@ -49,19 +50,25 @@ const CartForm = () => {
   return (
    <div> 
         <form onSubmit={handleSubmit}>
-            <fieldset>
+            <h2>Datos de la compra</h2>
                 <div className="cartForm">
                     <label>
-                        <input name="email" type="email" onChange={tomarDatos} placeholder="email"/>
-                    </label>
+                        <input name="email" type="email" onChange={tomarDatos} placeholder="Correo electrónico"/>
+                    </label> 
+                    <br></br>
+                    <br></br>
                     <label>
-                        <input name="phone" type="phone" onChange={tomarDatos} placeholder="phone"/>
+                        <input name="phone" type="phone" onChange={tomarDatos} placeholder="Teléfono"/>
                     </label>
+                    <br></br>
+                    <br></br>
                     <label>
-                        <input name="name" type="name" onChange={tomarDatos} placeholder="name"/>
+                        <input name="name" type="name" onChange={tomarDatos} placeholder="Nombre y Apellido"/>
                     </label>
+                    <br></br>
+                    <br></br>
                 </div>
-            </fieldset>
+            
             <div><button type="submit">Comprar</button></div> 
         </form> 
               

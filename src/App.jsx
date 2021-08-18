@@ -3,19 +3,18 @@ import ItemListContainer from "./components/ItemListContainer";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer';
 import { CartProvider } from './components/CartContext/CartContext';
-import Cart from './components/Navbar/Cart';
+import Cart from './components/Cart/Cart';
 import { ShopContextComponent } from "./components/ShopContext/ShopContext";
 import CartForm from './components/CartForm/CartForm';
+import Footer from "./components/Footer/Footer";
 import './App.css';
-
-//import "./archivo.css"
 
 
 function App() {
 
 
   return (
-
+    <div>
     <ShopContextComponent>
       <CartProvider>
         <BrowserRouter>
@@ -32,13 +31,13 @@ function App() {
           <Route exact path="/cart" component={Cart}> 
           <Cart></Cart>
           </Route>
-          <Route exact path="/checkout" component={CartForm}></Route>
-        
-         
+          <Route exact path="/checkout" component={CartForm}></Route>     
         </Switch>
         </BrowserRouter>
       </CartProvider>
     </ShopContextComponent>
+    <Footer/>
+    </div>
   );
 }
 

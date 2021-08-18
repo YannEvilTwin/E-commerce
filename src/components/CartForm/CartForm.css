@@ -1,0 +1,60 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+form {
+  padding: 80px;
+  max-width: 100%;
+  background: #7474BF;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #348AC7, #7474BF);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #348AC7, #7474BF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  margin: 0 auto;
+  padding-bottom: 12%;
+  text-align: center;
+  font-size: large;
+
+}
+
+input {
+  margin:  auto;
+  text-align: center;
+  font-size: medium;
+  padding: 5px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; 
+  background-color: transparent;
+  border-radius: 5px;  
+  border: 1px solid #353583;
+  width: 30%;
+  height: 40px;
+    
+}
+
+input::placeholder {
+    font-family: 'Open Sans', sans-serif;
+    color: #353583;
+    font-size: 0.9em;
+  }
+
+  h2 {
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    background: rgb(62,52,221);
+    background: linear-gradient(90deg, rgb(93, 85, 207) 0%, rgb(93, 200, 253) 35%, rgb(1, 173, 207) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 1.8rem;
+    font-family: 'Open Sans', sans-serif;
+    padding-bottom: 3%;
+    display: inline-block;
+    -webkit-text-stroke: 0.5px rgb(13, 36, 99);
+
+  }
+
+button a {
+    -webkit-text-stroke: 0.5px rgb(13, 36, 99);
+    background: rgb(62,52,221);
+    background: linear-gradient(90deg, rgb(78, 70, 192) 0%, rgb(115, 81, 238) 35%, rgb(46, 152, 223) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

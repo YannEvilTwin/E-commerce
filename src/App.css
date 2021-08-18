@@ -11,66 +11,12 @@ html {
   background: linear-gradient(to right, #7474bf, #348ac7); 
 }
 
-/*Navbar*/
-nav {
-  max-width: 100%;
-  mask-image: linear-gradient(90deg, rgba(255, 255, 255, 0.568) 0%, #ffffff 25%, #ffffff 75%, rgba(255, 255, 255, 0.904) 100%);
-  margin: 0 auto;
-  padding: 0 auto;
-}
-
-
-nav ul {
-  text-align: right;
-  background: linear-gradient(90deg, rgba(255, 255, 255, 0.274) 0%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 100%);
-  box-shadow: 0 0 25px rgba(0, 0, 0, 0.1), inset 0 0 1px rgba(255, 255, 255, 0.6); 
-  padding: 18px;
-}
-
-nav ul li {
-  display: inline-block;
-
-}
-
-nav ul li a {
-  padding: 18px;
-  font-family: "Open Sans";
-  text-transform:uppercase;
-  color: rgba(3, 16, 48, 0.856);
-  font-size: 18px;
-  text-decoration: none;
-  display: block;
- 
-}
-
-nav ul li i {
-  padding: 18px;
-  color: rgba(3, 16, 48, 0.856);
-  font-size: 25px;
-  text-decoration: none;
-  display: block;
- 
-}
-
-nav ul li a:hover {
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1), inset 0 0 1px rgba(255, 255, 255, 0.6);
-  background: rgba(255, 255, 255, 0.1);
-  color: rgba(0, 35, 122, 0.7);
-}
-
-nav ul li:hover {
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1), inset 0 0 1px rgba(255, 255, 255, 0.6);
-  background: rgba(255, 255, 255, 0.1);
-  color: rgba(0, 35, 122, 0.7);
-}
-
-
-/*Fin Navbar*/
+/*Titulos y subtitulos*/
 
 h1 {
   display: inline-block;
-  margin: 17px;
-  padding: 3px;
+  margin: 10px;
+  padding: -3px;
   -webkit-text-stroke: 0.5px rgb(13, 36, 99);
   
 }
@@ -87,6 +33,52 @@ h1 {
   float:left;
   font-family: 'Open Sans', sans-serif;
   
+}
+
+h2 {
+  margin-left: 37%;
+  font-family: 'Open Sans', sans-serif;
+  text-transform: uppercase;
+  background: rgb(62,52,221);
+  background: linear-gradient(90deg, rgb(93, 85, 207) 0%, rgb(93, 200, 253) 35%, rgb(1, 173, 207) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 1.8rem;
+  font-family: 'Open Sans', sans-serif;
+  padding-bottom: 3%;
+  display: inline-block;
+  -webkit-text-stroke: 0.5px rgb(13, 36, 99);
+  
+}
+
+h3 {
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+  -webkit-text-stroke: 0.5px rgb(13, 36, 99);
+  background: linear-gradient(90deg, rgb(78, 70, 192) 0%, rgb(72, 167, 214) 35%, rgba(0,212,255,1) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 1%;
+  margin-top: 5%;
+  text-transform: uppercase;
+ 
+}
+
+h4 {
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+  -webkit-text-stroke: 0.5px rgb(13, 36, 99);
+  background: linear-gradient(90deg, rgb(78, 70, 192) 0%, rgb(72, 167, 214) 35%, rgba(0,212,255,1) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 1%;
+  margin-top: 1%;
+  margin-left: 0.5%;
+  margin-right: 0.5%;
+
 }
 
 .text-style {
@@ -107,6 +99,8 @@ h1 {
   text-transform: uppercase;
   margin-top: 25px;
 }
+
+/*Fin titulos y subtitulos*/
 
 /*Botones*/
 
@@ -172,7 +166,7 @@ button {
   text-align: center;
   -webkit-text-stroke: 0.5px rgb(13, 36, 99);
   background: rgb(62,52,221);
-  background: linear-gradient(90deg, rgb(78, 70, 192) 0%, rgb(72, 167, 214) 35%, rgba(0,212,255,1) 100%);
+  background: linear-gradient(90deg, rgb(78, 70, 192) 0%, rgb(115, 81, 238) 35%, rgb(46, 152, 223) 100%);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -191,6 +185,12 @@ button {
   font-family: 'Open Sans', sans-serif;
   font-size: medium;
   text-align: center;
+  -webkit-text-stroke: 0.5px rgb(13, 36, 99);
+  background: rgb(62,52,221);
+  background: linear-gradient(90deg, rgb(78, 70, 192) 0%, rgb(115, 81, 238) 35%, rgb(46, 152, 223) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .botonCarrito:hover {
@@ -199,12 +199,19 @@ button {
 }
 
 .btnModCom {
-  display: flex; 
   display:inline-block;
   justify-content: center;
+  margin-top: 3.5%;
+  -webkit-text-stroke: 0.5px rgb(13, 36, 99);
+  background: rgb(62,52,221);
+  background: linear-gradient(90deg, rgb(78, 70, 192) 0%, rgb(115, 81, 238) 35%, rgb(46, 152, 223) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 
 }
 
+/*Fin botones*/
 
 /*Cards*/
 
@@ -252,35 +259,6 @@ img {
   margin: -10px;
 }
 
-h3 {
-  font-family: 'Open Sans', sans-serif;
-  text-align: center;
-  -webkit-text-stroke: 0.5px rgb(13, 36, 99);
-  background: linear-gradient(90deg, rgb(78, 70, 192) 0%, rgb(72, 167, 214) 35%, rgba(0,212,255,1) 100%);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  margin-bottom: 10px;
-  margin-top: 10px;
-  text-transform: uppercase;
- 
-}
-
-h4 {
-  font-family: 'Open Sans', sans-serif;
-  text-align: center;
-  -webkit-text-stroke: 0.5px rgb(13, 36, 99);
-  background: linear-gradient(90deg, rgb(78, 70, 192) 0%, rgb(72, 167, 214) 35%, rgba(0,212,255,1) 100%);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  margin-bottom: 10px;
-  margin-top: 10px;
-  margin-left: 5px;
-  margin-right: 5px;
-
-}
-
 .descripcion {
   margin-bottom: 10px;
   margin-top: 10px;
@@ -288,24 +266,7 @@ h4 {
   margin-right: 5px;
 }
 
-.cardCarrito {
-  justify-content: center;
-  align-items: center;
-}
+/*Fin cards*/
 
-/*Cart*/
 
-.carrito {
-  font-family: 'Open Sans', sans-serif;
-  text-align: center;
-  -webkit-text-stroke: 0.5px rgb(13, 36, 99);
-  background: linear-gradient(90deg, rgb(78, 70, 192) 0%, rgb(72, 167, 214) 35%, rgba(0,212,255,1) 100%);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  margin-bottom: 10px;
-  margin-top: 10px;
-  text-transform: uppercase;
-  
-}
 
