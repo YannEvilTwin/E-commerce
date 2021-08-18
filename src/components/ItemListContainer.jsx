@@ -16,7 +16,7 @@ const ItemListContainer = () => {
         <h2 className="text-style">Bienvenidos a Tienda Gamer</h2>
         <br></br>
         <br></br>
-        <h2>Conoce nuestros productos</h2>
+        <h2 className="centrado">Conoce nuestros productos</h2>
         <ItemList productos = {category ?                               
                               productos.filter(item => item.categoria == category)
                             : productos}/>                        

@@ -50,7 +50,7 @@ const CartForm = () => {
   return (
    <div> 
         <form onSubmit={handleSubmit}>
-            <h2>Datos de la compra</h2>
+            <h2 className="centrado">Datos de la compra</h2>
                 <div className="cartForm">
                     <label>
                         <input name="email" type="email" onChange={tomarDatos} placeholder="Correo electrónico"/>
