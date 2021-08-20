@@ -3,9 +3,9 @@
 form {
   padding: 80px;
   max-width: 100%;
-  background: #7474BF;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to left, #348AC7, #7474BF);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to left, #348AC7, #7474BF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #7474BF;  
+  background: -webkit-linear-gradient(to left, #348AC7, #7474BF);  
+  background: linear-gradient(to left, #348AC7, #7474BF); 
   margin: 0 auto;
   padding-bottom: 12%;
   text-align: center;
@@ -50,3 +50,35 @@ input::placeholder {
 
   }
 
+#botonForm1 {
+ position: absolute;
+ right: 30%;
+ top: 59%;
+
+}
+
+#botonForm2 {
+  position: absolute;
+  left: 30%;
+  top: 59%;
+ 
+ }
+
+ /*Sweet alert*/
+
+ .swal2-styled.swal2-confirm {
+  border: 0;
+  border-radius: .25em;
+  background: initial;
+  background-color: #8276ffc7;
+  width: 70%;
+  font-size: 1em;
+  font-family: 'Open Sans', sans-serif;
+  padding: 0.5em 1em;
+  margin: 0.5em;
+  cursor: pointer;
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+}
+ 

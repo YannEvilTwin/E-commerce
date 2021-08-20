@@ -8,14 +8,14 @@ const CartWidget = () => {
     const {cartLength} = useContext(CartContext);
   
     return (
-        cartLength > 0 ? 
+         
         <>
         <Link to="/cart">
         <i class="fab fa-opencart"></i>
         <span>{cartLength}</span>
         </Link>
         </>
-        :null
+       
     )
 
 

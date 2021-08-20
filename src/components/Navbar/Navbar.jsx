@@ -12,7 +12,6 @@ const Navbar = (props) => {
                 <li><Link to="">Inicio</Link></li>
                 <li><Link to="/category/1">Combos</Link></li>
                 <li><Link to="/category/2">Perifericos</Link></li>
-                <li><Link>Contacto</Link></li>
                 <li><CartWidget className="cartwidget"/></li>
               
             </ul>  

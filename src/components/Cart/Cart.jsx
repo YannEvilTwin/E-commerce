@@ -12,7 +12,6 @@ const Cart = () => {
 
         );
     };
- 
 
     return (
         cartLength > 0 ? 
@@ -34,10 +33,3 @@ const Cart = () => {
 };
 
 export default Cart;
-
-
-/*     //funcion para actualizar el total del carrito
-    const total = cart.reduce((acc, {cantidad, precio}) => {
-        return acc = acc + (precio * cantidad)
-    }, 0);  */
-

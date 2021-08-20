@@ -6,7 +6,8 @@ import Spinner from "./Spinner/Spinner";
 
 
 const ItemListContainer = () => {
-    const {productos, loading} = useContext(ShopContext);   
+    const {productos, loading} = useContext(ShopContext);
+    console.log(productos);   
     const {category} = useParams();
     
     return (

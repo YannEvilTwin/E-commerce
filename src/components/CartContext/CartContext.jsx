@@ -17,10 +17,6 @@ export const CartProvider = ({ children }) => {
         setCart([...cart, item])
     }; 
 
-    const agregarAlCarrito = (item) => {
-        setCart([...cart, item])
-    };
-
      //funcion para editar la cantidad si ya se encuentra
     const editCart = (itemEditado) => {
     const editado = cart.map((item) =>
@@ -55,7 +51,8 @@ export const CartProvider = ({ children }) => {
         return setCartLength(cartAux)
     } , [cart]);
 
-
+    //funcion para alerta del carrito
+    
     //creo un objeto para ir agregando todo lo que quiera tener en mi estado global (array, objetos o funciones)
     const values = {
     cart,
@@ -64,7 +61,6 @@ export const CartProvider = ({ children }) => {
     editCart,
     vaciarCarrito,
     deleteItem,
-    agregarAlCarrito,
     cartLength,
     total,
     addItem,

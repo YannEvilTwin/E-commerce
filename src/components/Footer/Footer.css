@@ -46,11 +46,11 @@ background: linear-gradient(90deg, rgb(78, 70, 192) 0%, rgb(34, 127, 173) 35%, r
 
 .contact-social ul li a:hover {
 border: 1px solid #5a4fee4f;
-color: #9490d3;
+color: #7269e7;
 }
 
 i {
-    padding-left: 14px;
+    padding-left: 1px;
     padding-top: 9px;
 }
 

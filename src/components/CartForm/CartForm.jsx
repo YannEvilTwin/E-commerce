@@ -2,11 +2,14 @@ import React, { useContext, useState } from "react";
 import { CartContext } from "../CartContext/CartContext";
 import { database } from "../Firebase/firebase";
 import firebase from "firebase/app";
+import Swal from 'sweetalert2'
+import { useHistory, Link } from "react-router-dom";
 import "./CartForm.css";
 
 const CartForm = () => {
-    
-    const { cart, total } = useContext(CartContext);
+
+    let history = useHistory();   
+    const { cart, total, setCart, vaciarCarrito } = useContext(CartContext);
     const [user, setUser] = useState({
         name: "",
         email: "",
@@ -25,13 +28,11 @@ const CartForm = () => {
 
         const ventas = database.collection("ventas");
         const productos = database.collection("productos");
-
         const compra = {
             buyer: user,
             items: cart,
             date: new Date().toString(),
-            total: total
-           
+            total: total           
       };
 
       ventas
@@ -43,8 +44,16 @@ const CartForm = () => {
             stock: firebase.firestore.FieldValue.increment(-decrement)
           });
         });
-        console.log(refDoc.id);
-      });
+        
+        Swal.fire(
+            '¡Compra realizada!',
+            '',
+            'success'
+          )
+          .then(() => {
+        setCart([])
+        history.push("/");  
+      })});  
     };
 
   return (
@@ -68,9 +77,19 @@ const CartForm = () => {
                     <br></br>
                     <br></br>
                 </div>
-            
-            <div><button type="submit">Comprar</button></div> 
+            <br></br>
+            <br></br>
+            <br></br>
+            <div className="confirmacion">
+                <div>
+                    <button type="submit">Confirmar <br></br> compra</button>
+                </div>        
+            </div>
         </form> 
+    
+        <div id="botonForm1"><Link to="/"><button type="submit">Seguir<br></br>comprando</button></Link></div>
+        <div id="botonForm2"><button onClick={vaciarCarrito}type="submit">Cancelar<br></br>compra</button></div>
+     
               
     </div> 
  );

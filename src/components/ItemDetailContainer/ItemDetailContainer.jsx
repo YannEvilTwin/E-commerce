@@ -14,20 +14,24 @@ const ItemDetailContainer = () => {
   //funcion donde busco 1 producto
   const traerElProduct = (idParams) => {
     const buscarProducto = productos.find(
-      (item) => item.id === parseInt(idParams)
+      (item) => item.id === idParams
     );
     setProducto(buscarProducto);
+    console.log(buscarProducto);
   };
 
   useEffect(() => {
     traerElProduct(id);
   }, []);
-
+  
   return (
-    <>
-      <ItemDetail item={producto} />
+
+    <>    
+      <ItemDetail item={producto} /> 
     </>
-  );
+  )
+   
+  
 };
 
 export default ItemDetailContainer;

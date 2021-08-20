@@ -11,8 +11,6 @@ const ItemDetail = ({ item }) => {
   
   const [finished, setFinished] = useState(false);
   const handleState = () => setFinished(!finished);
-  
-  const handleAgregar = () => agregarAlCarrito({...item, cantidad: contador});
 
   //Estado del contador
   const [contador, setContador] = useState(1);
@@ -33,7 +31,7 @@ const ItemDetail = ({ item }) => {
       <div className="card">
           <div className="box">
             <div className="content">
-              <img src={item.imagen} alt={item.nombre}/>
+              <img src={item?.imagen} alt={item.nombre}/>
                <div>
               <h3>{item.nombre}</h3>
               <h3> Precio: $ <span>{item.precio}</span></h3>
@@ -46,7 +44,9 @@ const ItemDetail = ({ item }) => {
                  stock={item.stock}
                  />  
                  <button onClick={agregarAlCarrito} className="btn">Agregar al carrito</button>
-                 <h3> Productos agregados {contador}</h3>
+                 <br></br>
+                 <br></br>
+                 <h4>En stock: {item.stock}</h4>
                 </>
               ) : (
                 <>

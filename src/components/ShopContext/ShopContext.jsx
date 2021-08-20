@@ -11,7 +11,9 @@ export const ShopContextComponent = ({children}) => {
         async function getData() {
             const dataBase = getFirestore(); // Conexion a la base de datos
             const products = await dataBase.collection("productos").get(); // Tomar la coleccion de productos 
-            setProducts(products.docs.map(element => element.data())); // Encuentra la data en firebase
+            setProducts(products.docs.map(element => {                     // Encuentra la data en firebase
+                return {...element.data(), id:element.id}
+            })); 
             setLoading(false);
         }
         getData();
