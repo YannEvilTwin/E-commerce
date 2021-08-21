@@ -10,15 +10,13 @@ html {
   background: -webkit-linear-gradient(to right, #7474bf, #348ac7); 
   background: linear-gradient(to right, #7474bf, #348ac7); 
 }
-
+ 
 /*Titulos y subtitulos*/
-
 h1 {
   display: inline-block;
   margin: 10px;
   padding: 0.6%;
-  -webkit-text-stroke: 0.5px rgb(13, 36, 99);
-  
+  -webkit-text-stroke: 0.5px rgb(13, 36, 99);  
 }
 
 h1 {
@@ -31,8 +29,7 @@ h1 {
   font-weight: 600;
   line-height: 3rem;
   float:left;
-  font-family: 'Open Sans', sans-serif;
-  
+  font-family: 'Open Sans', sans-serif; 
 }
 
 h2 {
@@ -49,7 +46,6 @@ h2 {
   padding-bottom: 3%;
   display: inline-block;
   -webkit-text-stroke: 0.5px rgb(13, 36, 99);
-  
 }
 
 h3 {
@@ -63,7 +59,6 @@ h3 {
   margin-bottom: 1%;
   margin-top: 5%;
   text-transform: uppercase;
- 
 }
 
 h4 {
@@ -78,7 +73,6 @@ h4 {
   margin-top: 1%;
   margin-left: 0.5%;
   margin-right: 0.5%;
-
 }
 
 .text-style {
@@ -99,17 +93,13 @@ h4 {
   text-transform: uppercase;
   margin-top: 25px;
 }
-
 /*Fin titulos y subtitulos*/
 
 /*Botones*/
-
 .centrado {
-
   display: flex;
   justify-content: center;
   margin: 10px;
-
 }
 
 p {
@@ -124,7 +114,6 @@ p {
   font-weight: 500;
   line-height: 2rem;
   font-family: 'Open Sans', sans-serif;
-
 }
 
 .btn-contador{
@@ -146,7 +135,6 @@ button:hover {
 }
 
 /*Button Cards*/
-
 .btn:hover {
   letter-spacing: 0.3em;
   background-color: transparent;
@@ -208,13 +196,10 @@ button {
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-
 }
-
 /*Fin botones*/
 
 /*Cards*/
-
 .container {
   display: flex;
   flex-direction: row;  
@@ -225,15 +210,14 @@ button {
 
 .container .card {
   position: relative;
-  min-width: 320px;
+  min-width: 350px;
   height: 600px;
   box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.2),
     inset -5px -5px 15px rgba(147, 190, 231, 0.1),
     5px 5px 15px rgba(0, 0, 0, 0.3), -5px -5px 15px rgba(255, 255, 255, 0.1);
   border-radius: 15px;
   margin: 30px;
-  transition: 0.5s;
-  
+  transition: 0.5s;  
 }
 
 .container .card .box {
@@ -247,7 +231,6 @@ button {
   overflow: hidden;
   transition: 0.5s;
 }
-
 
 img:hover {
   transform: translateY(0px) scale(0.8);
@@ -265,8 +248,85 @@ img {
   margin-left: 5px;
   margin-right: 5px;
 }
-
 /*Fin cards*/
 
+/*Responsive*/
+/*Movil hasta 320px*/
+@media screen and (max-width: 320px) {
+html, body {
+  overflow-x: hidden;
+}
+body {
+  position: relative
+}
+.text-style {
+  font-size: 2.2rem;
+  margin-left: 19px;
+} 
+.centrado {
+  margin-left: 6px;  
+  font-size: 1.1rem;
+  margin-top: 1%;
+}
 
+.container .card {
+ min-width: 320px;
+ margin-top: 10px;
+ margin-bottom: 10px;
+}
 
+button {  
+ margin-top: 10px;
+}
+}
+/*Fin Movil hasta 320px*/ 
+/*Movil hasta 425px*/
+@media screen and (min-width: 321px) and (max-width: 425px) {
+html, body {
+  overflow-x: hidden;
+}
+body {
+  position: relative
+}
+.text-style {
+  font-size: 2.4rem;
+  margin-left: 58px;
+} 
+.centrado {
+  margin-left: 6px;  
+  font-size: 1.1rem;
+  margin-top: 1%;
+}
+
+.container .card {
+  min-width: 320px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+}
+/*Fin Movil hasta 425px*/
+/*Tablet hasta 768px*/
+@media screen and (min-width: 426px) and (max-width: 768px) {
+  html, body {
+    overflow-x: hidden;
+  }
+  body {
+    position: relative
+  }
+  .text-style {
+    font-size: 2.4rem;
+    margin-left: 1.5%;
+  } 
+  .centrado {
+    margin-left: 6px;  
+    font-size: 1.1rem;
+    margin-top: 1%;
+ }
+
+ .container .card {
+  min-width: 320px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+ }
+}
+/*Fin Tablet hasta 768px*/

@@ -82,12 +82,12 @@ const CartForm = () => {
             <br></br>
             <div className="confirmacion">
                 <div>
-                    <button type="submit">Confirmar <br></br> compra</button>
+                    <button type="submit">Confirmar<br></br>compra</button>
                 </div>        
             </div>
         </form> 
     
-        <div id="botonForm1"><Link to="/"><button type="submit">Seguir<br></br>comprando</button></Link></div>
+        <div id="botonForm1"><Link to="/"><button type="submit">Continuar<br></br>compra</button></Link></div>
         <div id="botonForm2"><button onClick={vaciarCarrito}type="submit">Cancelar<br></br>compra</button></div>
      
               
@@ -96,12 +96,3 @@ const CartForm = () => {
 }
 
 export default CartForm;
-
-
-  /*   const createOrder = (email, phone, name) => {
-        
-        const order = {buyer: { email, phone, name }, item: cart, total: total}  
-        const database = getFirestore(); 
-        database.collection('orders').add(order);
-       } */
-

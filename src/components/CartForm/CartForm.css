@@ -10,7 +10,6 @@ form {
   padding-bottom: 12%;
   text-align: center;
   font-size: large;
-
 }
 
 input {
@@ -24,48 +23,43 @@ input {
   border-radius: 5px;  
   border: 1px solid #353583;
   width: 30%;
-  height: 40px;
-    
+  height: 40px;   
 }
 
 input::placeholder {
-    font-family: 'Open Sans', sans-serif;
-    color: #353583;
-    font-size: 0.9em;
-  }
+  font-family: 'Open Sans', sans-serif;
+  color: #353583;
+  font-size: 0.9em;
+}
 
-  h2 {
-    font-family: 'Open Sans', sans-serif;
-    text-transform: uppercase;
-    background: rgb(62,52,221);
-    background: linear-gradient(90deg, rgb(93, 85, 207) 0%, rgb(93, 200, 253) 35%, rgb(1, 173, 207) 100%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-size: 1.8rem;
-    font-family: 'Open Sans', sans-serif;
-    padding-bottom: 3%;
-    display: inline-block;
-    -webkit-text-stroke: 0.5px rgb(13, 36, 99);
-
-  }
+h2 {
+  font-family: 'Open Sans', sans-serif;
+  text-transform: uppercase;
+  background: rgb(62,52,221);
+  background: linear-gradient(90deg, rgb(93, 85, 207) 0%, rgb(93, 200, 253) 35%, rgb(1, 173, 207) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 1.8rem;
+  font-family: 'Open Sans', sans-serif;
+  padding-bottom: 3%;
+  display: inline-block;
+  -webkit-text-stroke: 0.5px rgb(13, 36, 99);
+}
 
 #botonForm1 {
  position: absolute;
  right: 30%;
  top: 59%;
-
 }
 
 #botonForm2 {
   position: absolute;
   left: 30%;
   top: 59%;
- 
- }
+}
 
  /*Sweet alert*/
-
  .swal2-styled.swal2-confirm {
   border: 0;
   border-radius: .25em;
@@ -82,3 +76,412 @@ input::placeholder {
   box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
 }
  
+/*Responsive*/
+/*Movil hasta 320px*/
+@media screen and (max-width: 320px) {
+form {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  background: #7474BF;
+  background: -webkit-linear-gradient(to left, #348AC7, #7474BF);
+  background: linear-gradient(to left, #348AC7, #7474BF);
+  margin: 0 auto;
+  padding-bottom: 12%;
+  text-align: center;
+  font-size: large;
+}
+
+.centrado {
+  text-align: center;
+  padding-top: 10px;
+}
+  
+input {
+  margin:  auto;
+  text-align: center;
+  font-size: medium;
+  padding: 5px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  background-color: transparent;
+  border-radius: 5px;
+  border: 1px solid #353583;
+  width: 75%;
+  height: 40px;
+}
+
+.cartForm {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  background: #7474BF;
+  background: -webkit-linear-gradient(to left, #348AC7, #7474BF);
+  background: linear-gradient(to left, #348AC7, #7474BF);
+  margin: 0 auto;
+  padding-bottom: 12%;
+  text-align: center;
+  font-size: large;
+  padding-top: 15px;
+}
+
+label {
+  font-family: 'Open Sans', sans-serif;
+  color: #353583;
+  font-size: 0.9em;
+}
+
+.confirmacion {
+  position: absolute;
+  top: 78%;
+  left: 30%;
+  padding-top: 40px;
+}
+
+#botonForm1 {
+  position: absolute;
+  top: 89%;
+  padding-top: 40px;   
+}
+
+#botonForm2 {
+  position: absolute;
+  top: 100%;
+  right: 32%;
+  padding-top: 40px;
+}
+
+.swal2-styled.swal2-confirm {
+  width: 75%;
+  margin: 0.5em;
+  font-size: 1em;
+  font-family: 'Open Sans', sans-serif;
+  padding: 0.5em 1em;
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+}
+}
+/*Fin Movil hasta 320px*/
+/*Movil hasta 425px*/
+@media screen and (min-width: 321px) and (max-width: 425px) {
+form {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  background: #7474BF;
+  background: -webkit-linear-gradient(to left, #348AC7, #7474BF);
+  background: linear-gradient(to left, #348AC7, #7474BF);
+  margin: 0 auto;
+  padding-bottom: 12%;
+  text-align: center;
+  font-size: large;
+}
+
+.centrado {
+  text-align: center;
+  padding-top: 10px;  
+}
+  
+input {
+  margin:  auto;
+  text-align: center;
+  font-size: medium;
+  padding: 5px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  background-color: transparent;
+  border-radius: 5px;
+  border: 1px solid #353583;
+  width: 75%;
+  height: 40px;
+}
+
+.cartForm {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  background: #7474BF;
+  background: -webkit-linear-gradient(to left, #348AC7, #7474BF);
+  background: linear-gradient(to left, #348AC7, #7474BF);
+  margin: 0 auto;
+  padding-bottom: 12%;
+  text-align: center;
+  font-size: large;
+  padding-top: 15px;
+}
+
+label {
+  font-family: 'Open Sans', sans-serif;
+  color: #353583;
+  font-size: 0.9em;
+}
+
+.confirmacion {
+  position: absolute;
+  top: 85%;
+  left: 36%;
+  padding-top: 40px;
+}
+
+#botonForm1 {
+  position: absolute;
+  top: 95%;
+  left: 30%;
+  padding-top: 40px;  
+}
+
+#botonForm2 {
+  position: absolute;
+  top: 105%;
+  right: 29%;
+  padding-top: 40px;
+}
+
+.swal2-styled.swal2-confirm {
+  width: 75%;
+  margin: 0.5em;
+  font-size: 1em;
+  font-family: 'Open Sans', sans-serif;
+  padding: 0.5em 1em;
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+}
+}
+/*Fin Movil hasta 425px*/
+
+/*Tablet hasta 768px*/
+@media screen and (min-width: 426px) and (max-width: 768px) {
+form {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  background: #7474BF;
+  background: -webkit-linear-gradient(to left, #348AC7, #7474BF);
+  background: linear-gradient(to left, #348AC7, #7474BF);
+  margin: 0 auto;
+  padding-bottom: 12%;
+  text-align: center;
+  font-size: large;
+}
+
+.centrado {
+  text-align: center;
+  padding-top: 10px;
+}
+  
+input {
+  margin:  auto;
+  text-align: center;
+  font-size: medium;
+  padding: 5px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  background-color: transparent;
+  border-radius: 5px;
+  border: 1px solid #353583;
+  width: 75%;
+  height: 40px;
+}
+
+.cartForm {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  background: #7474BF;
+  background: -webkit-linear-gradient(to left, #348AC7, #7474BF);
+  background: linear-gradient(to left, #348AC7, #7474BF);
+  margin: 0 auto;
+  padding-bottom: 12%;
+  text-align: center;
+  font-size: large;
+  padding-top: 15px;
+}
+
+label {
+  font-family: 'Open Sans', sans-serif;
+  color: #353583;
+  font-size: 0.9em;
+}
+
+.confirmacion {
+  position: absolute;
+  top: 110%;
+  left: 42.5%;
+  padding-top: 40px;
+}
+
+#botonForm1 {
+  top: 125%;
+  left: 29.5%;
+  padding-top: 40px;  
+}
+
+#botonForm2 {
+  top: 140%;
+  right: 29.5%;
+  padding-top: 40px;
+}
+
+.swal2-styled.swal2-confirm {
+  width: 75%;
+  margin: 0.5em;
+  font-size: 1em;
+  font-family: 'Open Sans', sans-serif;
+  padding: 0.5em 1em;
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+}
+}
+/*Fin Tablet hasta 768px*/
+/*Portatil hasta 1024px*/
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+form {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  background: #7474BF;
+  background: -webkit-linear-gradient(to left, #348AC7, #7474BF);
+  background: linear-gradient(to left, #348AC7, #7474BF);
+  margin: 0 auto;
+  padding-bottom: 12%;
+  text-align: center;
+  font-size: large;
+}
+
+.centrado {
+  text-align: center;
+  padding-top: 10px;
+}
+  
+input {
+  margin:  auto;
+  text-align: center;
+  font-size: medium;
+  padding: 5px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  background-color: transparent;
+  border-radius: 5px;
+  border: 1px solid #353583;
+  width: 75%;
+  height: 40px;
+}
+
+.cartForm {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  background: #7474BF;
+  background: -webkit-linear-gradient(to left, #348AC7, #7474BF);
+  background: linear-gradient(to left, #348AC7, #7474BF);
+  margin: 0 auto;
+  padding-bottom: 12%;
+  text-align: center;
+  font-size: large;
+  padding-top: 15px;
+}
+
+label {
+  font-family: 'Open Sans', sans-serif;
+  color: #353583;
+  font-size: 0.9em;
+}
+
+.confirmacion {
+  position: absolute;
+  top: 70%;
+  left: 44.5%;
+  padding-top: 40px;
+}
+
+#botonForm1 {
+  top: 70%;
+  right: 18%;
+  padding-top: 40px;  
+}
+
+#botonForm2 {
+  top: 70%;
+  left: 20%;
+  padding-top: 40px;
+}
+
+.swal2-styled.swal2-confirm {
+  width: 75%;
+  margin: 0.5em;
+  font-size: 1em;
+  font-family: 'Open Sans', sans-serif;
+  padding: 0.5em 1em;
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+}
+}
+/*Fin Portatil hasta 1024px*/
+/*Portatil hasta 1440px*/
+@media screen and (min-width: 1025px) and (max-width: 1440px) {
+form {
+  padding: 0;
+  margin: 0 auto;
+  max-width: 70%;
+  background: #7474BF;  
+  background: -webkit-linear-gradient(to left, #348AC7, #7474BF);  
+  background: linear-gradient(to left, #348AC7, #7474BF); 
+}
+  
+.centrado {
+  padding-top: 30px;
+}
+    
+input {
+  margin:  auto;
+  text-align: center;
+  font-size: medium;
+  padding: 20px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  background-color: transparent;
+  border-radius: 5px;
+  border: 1px solid #353583;
+  width: 75%;
+  height: 40px;
+}
+  
+.cartForm {
+  padding-top: 30px;
+}
+  
+.confirmacion {
+  position: absolute;
+  top: 80%;
+  left: 46%;
+  padding-top: 40px;
+}
+  
+#botonForm1 {
+  top: 80%;
+  right: 20%;
+  padding-top: 40px;  
+}
+  
+#botonForm2 {
+  top: 80%;
+  left: 22%;
+  padding-top: 40px;
+}
+  
+.swal2-styled.swal2-confirm {
+  width: 75%;
+  margin: 0.5em;
+  font-size: 1em;
+  font-family: 'Open Sans', sans-serif;
+  padding: 0.5em 1em;
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+  }
+}
+/*Fin Portatil hasta 1440px*/

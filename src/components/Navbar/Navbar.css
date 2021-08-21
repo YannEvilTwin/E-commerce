@@ -4,10 +4,8 @@ nav {
     mask-image: linear-gradient(90deg, rgba(255, 255, 255, 0.568) 0%, #ffffff 25%, #ffffff 75%, rgba(255, 255, 255, 0.904) 100%);
     margin: 0 auto;
     padding: 0 auto;
-
   }
-  
-  
+   
   nav ul {
     text-align: right;
     background: linear-gradient(90deg, rgba(255, 255, 255, 0.274) 0%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 100%);
@@ -16,7 +14,6 @@ nav {
   
   nav ul li {
     display: inline-block;
-  
   }
   
   nav ul li a {
@@ -27,7 +24,6 @@ nav {
     font-size: 18px;
     text-decoration: none;
     display: block;
-   
   }
   
   nav ul li i {
@@ -35,16 +31,135 @@ nav {
     color: rgba(3, 16, 48, 0.856);
     font-size: 25px;
     text-decoration: none;
-    display: block;
-   
+    display: block; 
   }
   
- 
   nav ul li:hover {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1), inset 0 0 1px rgba(147, 181, 255, 0.6);
     background: rgba(255, 255, 255, 0.007);
     color: rgba(0, 35, 122, 0.7);
   }
+/*Fin Navbar*/
 
-  
-  /*Fin Navbar*/
+/*Responsive*/
+/*Movil hasta 320px*/
+@media (max-width: 320px) {
+  body {
+    height:100%;
+    background: #7474bf; 
+    background: -webkit-linear-gradient(to right, #7474bf, #348ac7); 
+    background: linear-gradient(to right, #7474bf, #348ac7);  
+  }
+  .navbar {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #logo {      
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 17%;     
+  }
+
+  nav ul {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;   
+  }
+  nav ul li a {
+    padding: 8px;
+    font-size: 16px;
+    text-decoration: none;
+    display: block;
+  }
+  nav ul li i {
+    padding: 18px;
+    color: rgba(3, 16, 48, 0.856);
+    font-size: 25px;
+    text-decoration: none;
+    display: block;
+  }
+
+  #cartWidget {
+    padding: 1px;
+  }
+}
+/*Fin Movil hasta 320px*/
+
+/*Movil hasta 425px*/
+@media screen and (min-width: 321px) and (max-width: 425px) {
+  body {
+    height:100%;
+    background: #7474bf; 
+    background: -webkit-linear-gradient(to right, #7474bf, #348ac7); 
+    background: linear-gradient(to right, #7474bf, #348ac7);  
+  }
+  .navbar {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #logo {      
+    margin-left: 25%;     
+  }
+
+  nav ul {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;   
+  }
+  nav ul li a {
+    padding: 9px;
+    font-size: 16px;
+    text-decoration: none;
+    display: block;
+  }
+  nav ul li i {
+    padding: 18px;
+    color: rgba(3, 16, 48, 0.856);
+    font-size: 25px;
+    text-decoration: none;
+    display: block;
+  }
+
+  #cartWidget {
+    padding: 1px;
+  }
+}
+/*Fin Movil hasta 425px*/
+
+/*Tablet hasta 768px*/
+@media screen and (min-width: 426px) and (max-width: 768px) {
+ body {
+   height:100%;
+   background: #7474bf; 
+   background: -webkit-linear-gradient(to right, #7474bf, #348ac7); 
+   background: linear-gradient(to right, #7474bf, #348ac7);  
+  }
+ .navbar {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #logo {      
+    margin-left: 35%;   
+    font-size: 2em;  
+  }
+
+  nav ul {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #cartWidget {
+    padding: 1px;
+  }
+}
+ /*Fin Tablet hasta 768px*/

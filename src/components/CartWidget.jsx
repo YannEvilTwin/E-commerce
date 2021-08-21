@@ -11,7 +11,7 @@ const CartWidget = () => {
          
         <>
         <Link to="/cart">
-        <i class="fab fa-opencart"></i>
+        <i id="cartWidget" class="fab fa-opencart"></i>
         <span>{cartLength}</span>
         </Link>
         </>

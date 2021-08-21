@@ -17,7 +17,7 @@ const ItemDetail = ({ item }) => {
   console.log(cart);
 
   const agregarAlCarrito = () => {
-    if (isInCart(item.id)) { 
+    if (isInCart(item?.id)) { 
       console.log("ya esta en carrito");
       editCart({ ...item, cantidad: contador });
     } else {
@@ -31,7 +31,7 @@ const ItemDetail = ({ item }) => {
       <div className="card">
           <div className="box">
             <div className="content">
-              <img src={item?.imagen} alt={item.nombre}/>
+              <img src={item.imagen} alt={item.nombre}/>
                <div>
               <h3>{item.nombre}</h3>
               <h3> Precio: $ <span>{item.precio}</span></h3>
