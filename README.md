@@ -42,7 +42,7 @@ Realizado por Yanina Andregnette
 
 ## Deploy
 
-Para poder visualizar el proyecto, se puede entrar [acá]([E-Commerce (e-commerce-yanina-a.herokuapp.com)](https://e-commerce-yanina-a.herokuapp.com/))
+Para poder visualizar el proyecto, se puede entrar [acá](https://e-commerce-yanina-a.herokuapp.com/)
 
 ### Cómo levantar el proyecto
 
@@ -59,7 +59,7 @@ E-Commerce Project in React JS.
 Final delivery of the project.
 A fictitious e-commerce site was made for the sale of PC products, oriented to the Gaming ecosystem.
 
-## Purchase process´Gif 
+## Purchase process Gif 
 
 
 
