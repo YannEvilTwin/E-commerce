@@ -210,7 +210,7 @@ button {
 
 .container .card {
   position: relative;
-  min-width: 350px;
+  min-width: 321px;
   height: 600px;
   box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.2),
     inset -5px -5px 15px rgba(147, 190, 231, 0.1),
@@ -275,9 +275,6 @@ body {
  margin-bottom: 10px;
 }
 
-button {  
- margin-top: 10px;
-}
 }
 /*Fin Movil hasta 320px*/ 
 /*Movil hasta 425px*/
@@ -286,7 +283,7 @@ html, body {
   overflow-x: hidden;
 }
 body {
-  position: relative
+  position: relative;
 }
 .text-style {
   font-size: 2.4rem;
@@ -303,6 +300,7 @@ body {
   margin-top: 10px;
   margin-bottom: 10px;
 }
+
 }
 /*Fin Movil hasta 425px*/
 /*Tablet hasta 768px*/
@@ -311,7 +309,7 @@ body {
     overflow-x: hidden;
   }
   body {
-    position: relative
+    position: relative;
   }
   .text-style {
     font-size: 2.4rem;

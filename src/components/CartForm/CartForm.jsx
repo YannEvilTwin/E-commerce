@@ -76,10 +76,7 @@ const CartForm = () => {
                     </label>
                     <br></br>
                     <br></br>
-                </div>
-            <br></br>
-            <br></br>
-            <br></br>
+                </div>         
             <div className="confirmacion">
                 <div>
                     <button type="submit">Confirmar<br></br>compra</button>

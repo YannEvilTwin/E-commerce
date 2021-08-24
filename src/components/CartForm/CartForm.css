@@ -47,6 +47,10 @@ h2 {
   -webkit-text-stroke: 0.5px rgb(13, 36, 99);
 }
 
+.confirmacion {
+  margin-top: 3.5%;
+}
+
 #botonForm1 {
  position: absolute;
  right: 30%;
@@ -58,7 +62,6 @@ h2 {
   left: 30%;
   top: 59%;
 }
-
  /*Sweet alert*/
  .swal2-styled.swal2-confirm {
   border: 0;
@@ -87,7 +90,6 @@ form {
   background: -webkit-linear-gradient(to left, #348AC7, #7474BF);
   background: linear-gradient(to left, #348AC7, #7474BF);
   margin: 0 auto;
-  padding-bottom: 12%;
   text-align: center;
   font-size: large;
 }
@@ -132,23 +134,17 @@ label {
 }
 
 .confirmacion {
-  position: absolute;
-  top: 78%;
-  left: 30%;
-  padding-top: 40px;
+  position: static; 
 }
 
 #botonForm1 {
-  position: absolute;
-  top: 89%;
-  padding-top: 40px;   
+  position: static;
+  padding-top: 30px;   
 }
 
 #botonForm2 {
-  position: absolute;
-  top: 100%;
-  right: 32%;
-  padding-top: 40px;
+  position: static;
+  padding-top: 30px;
 }
 
 .swal2-styled.swal2-confirm {
@@ -173,7 +169,6 @@ form {
   background: -webkit-linear-gradient(to left, #348AC7, #7474BF);
   background: linear-gradient(to left, #348AC7, #7474BF);
   margin: 0 auto;
-  padding-bottom: 12%;
   text-align: center;
   font-size: large;
 }
@@ -187,7 +182,7 @@ input {
   margin:  auto;
   text-align: center;
   font-size: medium;
-  padding: 5px;
+  padding: 10px;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   background-color: transparent;
@@ -198,16 +193,7 @@ input {
 }
 
 .cartForm {
-  padding: 0;
-  margin: 0;
-  width: 100%;
-  background: #7474BF;
-  background: -webkit-linear-gradient(to left, #348AC7, #7474BF);
-  background: linear-gradient(to left, #348AC7, #7474BF);
-  margin: 0 auto;
   padding-bottom: 12%;
-  text-align: center;
-  font-size: large;
   padding-top: 15px;
 }
 
@@ -217,25 +203,14 @@ label {
   font-size: 0.9em;
 }
 
-.confirmacion {
-  position: absolute;
-  top: 85%;
-  left: 36%;
-  padding-top: 40px;
-}
-
 #botonForm1 {
-  position: absolute;
-  top: 95%;
-  left: 30%;
-  padding-top: 40px;  
+  position: static;
+  padding-top: 30px;   
 }
 
 #botonForm2 {
-  position: absolute;
-  top: 105%;
-  right: 29%;
-  padding-top: 40px;
+  position: static;
+  padding-top: 30px;
 }
 
 .swal2-styled.swal2-confirm {
@@ -261,7 +236,6 @@ form {
   background: -webkit-linear-gradient(to left, #348AC7, #7474BF);
   background: linear-gradient(to left, #348AC7, #7474BF);
   margin: 0 auto;
-  padding-bottom: 12%;
   text-align: center;
   font-size: large;
 }
@@ -293,7 +267,7 @@ input {
   background: -webkit-linear-gradient(to left, #348AC7, #7474BF);
   background: linear-gradient(to left, #348AC7, #7474BF);
   margin: 0 auto;
-  padding-bottom: 12%;
+  padding-bottom: 9%;
   text-align: center;
   font-size: large;
   padding-top: 15px;
@@ -306,21 +280,16 @@ label {
 }
 
 .confirmacion {
-  position: absolute;
-  top: 110%;
-  left: 42.5%;
-  padding-top: 40px;
+  position: static; 
 }
 
 #botonForm1 {
-  top: 125%;
-  left: 29.5%;
-  padding-top: 40px;  
+  position: static;
+  padding-top: 40px;   
 }
 
 #botonForm2 {
-  top: 140%;
-  right: 29.5%;
+  position: static;
   padding-top: 40px;
 }
 
@@ -346,7 +315,6 @@ form {
   background: -webkit-linear-gradient(to left, #348AC7, #7474BF);
   background: linear-gradient(to left, #348AC7, #7474BF);
   margin: 0 auto;
-  padding-bottom: 12%;
   text-align: center;
   font-size: large;
 }
@@ -378,7 +346,7 @@ input {
   background: -webkit-linear-gradient(to left, #348AC7, #7474BF);
   background: linear-gradient(to left, #348AC7, #7474BF);
   margin: 0 auto;
-  padding-bottom: 12%;
+  padding-bottom: 5%;
   text-align: center;
   font-size: large;
   padding-top: 15px;
@@ -391,21 +359,16 @@ label {
 }
 
 .confirmacion {
-  position: absolute;
-  top: 70%;
-  left: 44.5%;
-  padding-top: 40px;
+  position: static; 
 }
 
 #botonForm1 {
-  top: 70%;
-  right: 18%;
-  padding-top: 40px;  
+  position: static;
+  padding-top: 40px;   
 }
 
 #botonForm2 {
-  top: 70%;
-  left: 20%;
+  position: static;
   padding-top: 40px;
 }
 
@@ -451,23 +414,25 @@ input {
 }
   
 .cartForm {
-  padding-top: 30px;
+  padding-top: 10px;
 }
   
 .confirmacion {
-  position: absolute;
+  position: static;
   top: 80%;
   left: 46%;
   padding-top: 40px;
 }
   
 #botonForm1 {
+  position: static;
   top: 80%;
   right: 20%;
   padding-top: 40px;  
 }
   
 #botonForm2 {
+  position: static;
   top: 80%;
   left: 22%;
   padding-top: 40px;
