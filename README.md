@@ -10,6 +10,8 @@ Se realizó un sitio de comercio electrónico ficticio para la venta de producto
 
 ![Vista de la aplicación](https://media.giphy.com/media/hb27kyP2cU2s5FuZXu/giphy.gif?cid=790b76115e6762c2eebd16edfcbe210b925cad267254e2b3&rid=giphy.gif&ct=g)
 
+![Vista de la aplicación](https://media.giphy.com/media/5EHIcwzZ9xcAhDEzze/giphy-downsized-large.gif?cid=790b761161a2aebe1125bc7a9caf4145046a95fa89ef3a44&rid=giphy-downsized-large.gif&ct=g)
+
 
 
 Realizado por Yanina Andregnette
@@ -63,7 +65,9 @@ A fictitious e-commerce site was made for the sale of PC products, oriented to t
 
 
 
-![Vista de la aplicación](https://media.giphy.com/media/hb27kyP2cU2s5FuZXu/giphy.gif?cid=790b76115e6762c2eebd16edfcbe210b925cad267254e2b3&rid=giphy.gif&ct=g)
+![App view](https://media.giphy.com/media/hb27kyP2cU2s5FuZXu/giphy.gif?cid=790b76115e6762c2eebd16edfcbe210b925cad267254e2b3&rid=giphy.gif&ct=g)
+
+![App view](https://media.giphy.com/media/5EHIcwzZ9xcAhDEzze/giphy-downsized-large.gif?cid=790b761161a2aebe1125bc7a9caf4145046a95fa89ef3a44&rid=giphy-downsized-large.gif&ct=g)
 
 
 
