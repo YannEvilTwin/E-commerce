@@ -9,34 +9,31 @@ import CartForm from './components/CartForm/CartForm';
 import Footer from "./components/Footer/Footer";
 import './App.css';
 
-
 function App() {
-
 
   return (
     <div>
-    <ShopContextComponent>
-      <CartProvider>
-        <BrowserRouter>
-        <div className="App">
-          <Navbar nombreDeLaTienda="TIENDA GAMER"/>
-        </div>
-        <div className="centrado">
-        </div>
-
-        <Switch>
-          <Route exact path="/" component={ItemListContainer}></Route>
-          <Route path="/category/:category" component={ItemListContainer}></Route>
-          <Route path="/Item/:id" component={ItemDetailContainer}></Route>
-          <Route exact path="/cart" component={Cart}> 
-          <Cart></Cart>
-          </Route>
-          <Route exact path="/checkout" component={CartForm}></Route>     
-        </Switch>
-        </BrowserRouter>
-      </CartProvider>
-    </ShopContextComponent>
-    <Footer/>
+      <ShopContextComponent>
+        <CartProvider>
+          <BrowserRouter>
+            <div className="App">
+              <Navbar nombreDeLaTienda="TIENDA GAMER" />
+            </div>
+            <div className="centrado">
+            </div>
+            <Switch>
+              <Route exact path="/" component={ItemListContainer}></Route>
+              <Route path="/category/:category" component={ItemListContainer}></Route>
+              <Route path="/Item/:id" component={ItemDetailContainer}></Route>
+              <Route exact path="/cart" component={Cart}>
+                <Cart></Cart>
+              </Route>
+              <Route exact path="/checkout" component={CartForm}></Route>
+            </Switch>
+          </BrowserRouter>
+        </CartProvider>
+      </ShopContextComponent>
+      <Footer />
     </div>
   );
 }

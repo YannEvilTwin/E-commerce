@@ -8,7 +8,6 @@ const ItemCount = ({ initial, stock, contador, setContador }) => {
          setContador(contador + 1)
       } 
    }
-
    const handleClickResta = () => {
       if(contador > initial){
          setContador(contador - 1)
@@ -17,12 +16,12 @@ const ItemCount = ({ initial, stock, contador, setContador }) => {
    
     return (
        <div className="centrado">
-          <button className="btn-contador" onClick = {handleClickResta}>
-           -
+          <button className="btn-contador" onClick={handleClickResta}>
+             -
           </button>
-            <p>{contador}</p>
-          <button className="btn-contador" onClick = {handleClick}>
-           +
+          <p>{contador}</p>
+          <button className="btn-contador" onClick={handleClick}>
+             +
           </button>
        </div>
     )

@@ -57,38 +57,40 @@ const CartForm = () => {
     };
 
   return (
-   <div> 
-        <form onSubmit={handleSubmit}>
-            <h2 className="centrado">Datos de la compra</h2>
-                <div className="cartForm">
-                    <label>
-                        <input name="email" type="email" onChange={tomarDatos} placeholder="Correo electrónico"/>
-                    </label> 
-                    <br></br>
-                    <br></br>
-                    <label>
-                        <input name="phone" type="phone" onChange={tomarDatos} placeholder="Teléfono"/>
-                    </label>
-                    <br></br>
-                    <br></br>
-                    <label>
-                        <input name="name" type="name" onChange={tomarDatos} placeholder="Nombre y Apellido"/>
-                    </label>
-                    <br></br>
-                    <br></br>
-                </div>         
-            <div className="confirmacion">
-                <div>
-                    <button type="submit">Confirmar<br></br>compra</button>
-                </div>        
-            </div>
-        </form> 
-    
-        <div id="botonForm1"><Link to="/"><button type="submit">Continuar<br></br>compra</button></Link></div>
-        <div id="botonForm2"><button onClick={vaciarCarrito}type="submit">Cancelar<br></br>compra</button></div>
-     
-              
-    </div> 
+   <div>
+       <form onSubmit={handleSubmit}>
+           <h2 className="centrado">Datos de la compra</h2>
+           <div className="cartForm">
+               <label>
+                   <input name="email" type="email" onChange={tomarDatos} placeholder="Correo electrónico" />
+               </label>
+               <br></br>
+               <br></br>
+               <label>
+                   <input name="phone" type="phone" onChange={tomarDatos} placeholder="Teléfono" />
+               </label>
+               <br></br>
+               <br></br>
+               <label>
+                   <input name="name" type="name" onChange={tomarDatos} placeholder="Nombre y Apellido" />
+               </label>
+               <br></br>
+               <br></br>
+           </div>
+           <div className="confirmacion">
+               <div>
+                   <button type="submit">Confirmar<br></br>compra</button>
+               </div>
+           </div>
+       </form>
+
+       <div id="botonForm1">
+           <Link to="/"><button type="submit">Continuar<br></br>compra</button></Link>
+       </div>
+       <div id="botonForm2"><button onClick={vaciarCarrito}type="submit">Cancelar<br></br>compra</button></div>
+
+
+   </div>
  );
 }
 

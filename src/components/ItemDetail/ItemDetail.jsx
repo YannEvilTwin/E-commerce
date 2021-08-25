@@ -28,37 +28,32 @@ const ItemDetail = ({ item }) => {
   return (
 
    <div className="container">
-      <div className="card">
-          <div className="box">
-            <div className="content">
-              <img src={item.imagen} alt={item.nombre}/>
-               <div>
-              <h3>{item.nombre}</h3>
-              <h3> Precio: $ <span>{item.precio}</span></h3>
-              {!finished ? (
-                <>
-                 <ItemCount
-                 initial={1}
-                 contador={contador}
-                 setContador={setContador}
-                 stock={item.stock}
-                 />  
-                 <button onClick={agregarAlCarrito} className="btn">Agregar al carrito</button>
-                 <br></br>
-                 <br></br>
-                 <h4>En stock: {item.stock}</h4>
-                </>
-              ) : (
-                <>
-                <Link to="/cart" onClick={handleState}>
-                  <button onClick={handleState}>Finalizar Compra</button>
-                </Link>
-                </>
-              )}             
-               </div>
-            </div>
-        </div>
-      </div>
+     <div className="card">
+       <div className="box">
+         <div className="content">
+           <img src={item.imagen} alt={item.nombre} />
+           <div>
+             <h3>{item.nombre}</h3>
+             <h3> Precio: $ <span>{item.precio}</span></h3>
+             {!finished ? (
+             <>
+               <ItemCount initial={1} contador={contador} setContador={setContador} stock={item.stock} />
+               <button onClick={agregarAlCarrito} className="btn">Agregar al carrito</button>
+               <br></br>
+               <br></br>
+               <h4>En stock: {item.stock}</h4>
+             </>
+             ) : (
+             <>
+               <Link to="/cart" onClick={handleState}>
+               <button onClick={handleState}>Finalizar Compra</button>
+               </Link>
+             </>
+             )}
+           </div>
+         </div>
+       </div>
+     </div>
    </div>
   );
 };
