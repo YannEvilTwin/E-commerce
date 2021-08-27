@@ -87,9 +87,9 @@ const CartForm = () => {
        <div id="botonForm1">
            <Link to="/"><button type="submit">Continuar<br></br>compra</button></Link>
        </div>
-       <div id="botonForm2"><button onClick={vaciarCarrito}type="submit">Cancelar<br></br>compra</button></div>
-
-
+       <div id="botonForm2">
+           <Link to="/"><button onClick={vaciarCarrito}type="submit">Cancelar<br></br>compra</button></Link>
+       </div>
    </div>
  );
 }

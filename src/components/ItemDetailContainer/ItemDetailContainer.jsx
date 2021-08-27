@@ -17,7 +17,6 @@ const ItemDetailContainer = () => {
       (item) => item.id === idParams
     );
     setProducto(buscarProducto);
-    console.log(buscarProducto);
   };
 
   useEffect(() => {
@@ -43,7 +42,3 @@ const ItemDetailContainer = () => {
 };
 
 export default ItemDetailContainer;
-
-/* `Cargando ${id}` */
-/* const [loading , setLoading] = useState(false); */
-/* loading ? <Spinner /> : */

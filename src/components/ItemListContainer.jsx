@@ -22,8 +22,7 @@ const ItemListContainer = () => {
                               productos.filter(item => item.categoria == category)
                             : productos}/>                        
      </div>    
-  ); 
- 
+  );  
 };
 
 

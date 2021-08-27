@@ -39,9 +39,3 @@ function App() {
 }
 
 export default App;
-
-//si o si componentes con mayuscula
-/* Los componentes son funciones, (en js la función se debe ejecutar para que funcionen9, 
-  en este caso, los componentes que se quieren mostrar en el DOM, que devuelven algún tag "HTML", 
-  se los importa en el componente donde se los quiere utilizar, de ese modo se ejecuta
-*/

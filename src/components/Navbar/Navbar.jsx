@@ -28,4 +28,4 @@ const Navbar = (props) => {
     );
 };
 
-export default Navbar; //siempre exportar con el nombre de la variable
+export default Navbar;

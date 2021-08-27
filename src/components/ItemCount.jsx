@@ -1,12 +1,11 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react';
 
-
-const ItemCount = ({ initial, stock, contador, setContador }) => {
+const ItemCount = ({ initial, stock, contador, setContador}) => {
    
    const handleClick = () => {
       if(contador < stock){
          setContador(contador + 1)
-      } 
+      }
    }
    const handleClickResta = () => {
       if(contador > initial){
@@ -28,4 +27,3 @@ const ItemCount = ({ initial, stock, contador, setContador }) => {
 }
 
 export default ItemCount;
-

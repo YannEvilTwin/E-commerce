@@ -24,6 +24,7 @@ Realizado por Yanina Andregnette
 - Ver los artículos en el carrito y el precio total de los mismos. Eliminar productos individualmente o vaciarlo.
 - Comprar productos finalizando la compra o modificar la compra para agregar otros productos antes de finalizar.
 - El stock de productos se reducirá una vez finalizada la compra.
+- Si no hay stock del producto, no se podrá agregar al carrito.
 
 ## Herramientas utilizadas:
 
@@ -81,6 +82,7 @@ Made by Yanina Andregnette
 - See the items in the cart and their total price. Delete products individually or empty it.
 - Buy products at the end of the purchase or modify the purchase to add other products before finalizing.
 - The stock will be reduced once the purchase is completed.
+- If there is no stock of the product, it cannot be added to the cart.
 
 
 

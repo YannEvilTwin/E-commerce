@@ -14,7 +14,6 @@ const ItemDetail = ({ item }) => {
 
   //Estado del contador
   const [contador, setContador] = useState(1);
-  console.log(cart);
 
   const agregarAlCarrito = () => {
     if (isInCart(item?.id)) { 
@@ -37,11 +36,18 @@ const ItemDetail = ({ item }) => {
              <h3> Precio: $ <span>{item.precio}</span></h3>
              {!finished ? (
              <>
-               <ItemCount initial={1} contador={contador} setContador={setContador} stock={item.stock} />
-               <button onClick={agregarAlCarrito} className="btn">Agregar al carrito</button>
+               <ItemCount 
+               initial={item.stock > 0 ? 1 : 0} 
+               contador={contador} 
+               setContador={setContador} 
+               stock={item.stock} />
+               <button 
+               disabled={item.stock <= 0 ? true : false || contador <= 0}
+               onClick={agregarAlCarrito} className="btn">Agregar al carrito
+               </button>
                <br></br>
                <br></br>
-               <h4>En stock: {item.stock}</h4>
+               <h4>Stock: {item.stock > 0 ? `Stock: ${item.stock}` : "No disponible" }</h4>
              </>
              ) : (
              <>

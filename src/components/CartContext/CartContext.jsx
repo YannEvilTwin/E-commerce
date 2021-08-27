@@ -50,8 +50,6 @@ export const CartProvider = ({ children }) => {
 
         return setCartLength(cartAux)
     } , [cart]);
-
-    //funcion para alerta del carrito
     
     //creo un objeto para ir agregando todo lo que quiera tener en mi estado global (array, objetos o funciones)
     const values = {
