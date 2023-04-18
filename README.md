@@ -45,7 +45,7 @@ Realizado por Yanina Andregnette
 
 ## Deploy
 
-Para poder visualizar el proyecto, se puede entrar [acá](https://e-commerce-yanina-a.herokuapp.com/)
+Para poder visualizar el proyecto, se puede entrar [acá](https://ecommerce-55q9.onrender.com/)
 
 ### Cómo levantar el proyecto
 
@@ -103,7 +103,7 @@ Made by Yanina Andregnette
 
 ## Deploy
 
-In order to view the project, you can enter [here](https://e-commerce-yanina-a.herokuapp.com/)
+In order to view the project, you can enter [here](https://ecommerce-55q9.onrender.com/)
 
 ### How to set it up
 
